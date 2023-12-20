@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fox_controller : Living
 {
+    public static Fox_controller instance = null;
     [SerializeField] GameObject Player;
     [SerializeField] float Fox_Speed;
     [SerializeField] float Fox_Rot_Speed;
@@ -19,7 +20,10 @@ public class Fox_controller : Living
     private Animator ani;
     private float h, v;  //πÊ«‚
 
-
+    private void Awake()
+    {
+        Fox_instance();
+    }
     private void Start()
     {
         ani = GetComponent<Animator>();
@@ -54,14 +58,6 @@ public class Fox_controller : Living
             ani.SetBool("PlayerWalk", false);
         }
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Foxmove = false;
-            ani.SetTrigger("PlayerRoll");
-            Player.transform.position = this.transform.position;
-            Invoke("FoxmoveControll", 1f);
-
-        }
 
     }
 
@@ -83,6 +79,14 @@ public class Fox_controller : Living
                 ani.SetBool("Attack", true);
             }
             Combocount = Mathf.Clamp(Combocount, 0, 3);
+
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Foxmove = false;
+            ani.SetTrigger("PlayerRoll");
+            Player.transform.position = this.transform.position;
+            Invoke("FoxmoveControll", 1f);
 
         }
 
@@ -131,4 +135,16 @@ public class Fox_controller : Living
         Foxmove = true;
     }
 
+    private void Fox_instance()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }
