@@ -15,13 +15,17 @@ public class Target_Scanner : MonoBehaviour
     }
     private void Update()
     {
-        UpdateTarget();
-        if (target == null)
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            return;
+            UpdateTarget();
+            if (target == null)
+            {
+                return;
+            }
+            Vector3 dir = target.position - this.transform.position;
+            dir.y = 0;
+            this.transform.forward = dir.normalized;
         }
-        Vector3 dir = target.position - transform.position;
-        this.transform.LookAt(target);
 
 
     }
