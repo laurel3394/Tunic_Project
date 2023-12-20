@@ -15,7 +15,6 @@ public class Fox_controller : Living
     private float AttackTime = 0;
     private float maxComboDelay = 1.2f;
 
-
     private Rigidbody rigi;
     private Animator ani;
     private float h, v;  //πÊ«‚
@@ -32,6 +31,7 @@ public class Fox_controller : Living
     private void Update()
     {
         Fox_Attack();
+        //PlayerMove();
     }
     void FixedUpdate()
     {
@@ -147,4 +147,6 @@ public class Fox_controller : Living
             Destroy(gameObject);
         }
     }
+
+
 }
