@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Living : MonoBehaviour
 {
-    
     protected int currentHp;
 
+    [Header("기본정보")]
     [SerializeField] protected int StartHp;
     public bool isDead { get; protected set; }
 

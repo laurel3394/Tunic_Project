@@ -5,12 +5,18 @@ using UnityEngine;
 public class Fox_controller : Living
 {
     public static Fox_controller instance = null;
-    [SerializeField] GameObject Player;
-    [SerializeField] float Fox_Speed;
-    [SerializeField] float Fox_Rot_Speed;
+    [Header("플레이어 정보")]
+    [SerializeField] private GameObject Sword;
+    [SerializeField] private GameObject Wand;
+    [SerializeField] private float Fox_Speed;
+    [SerializeField] private float Fox_Rot_Speed;
+    [SerializeField] public int Damage;
+    [SerializeField] private int SwordDamage;
+    [SerializeField] private int WandDamage;
 
     private bool Foxmove = true;
-
+    private bool FoxAttack = true;
+    [Header("확인용")]
     [SerializeField] private int Combocount = 0;
     private float AttackTime = 0;
     private float maxComboDelay = 1.2f;
@@ -22,16 +28,18 @@ public class Fox_controller : Living
     private void Awake()
     {
         Fox_instance();
+        Sword.SetActive(false);
+        Wand.SetActive(false);
     }
     private void Start()
     {
         ani = GetComponent<Animator>();
         rigi = GetComponent<Rigidbody>();
+
     }
     private void Update()
     {
         Fox_Attack();
-        //PlayerMove();
     }
     void FixedUpdate()
     {
@@ -70,6 +78,9 @@ public class Fox_controller : Living
 
         if (Input.GetKeyDown(KeyCode.J))
         {
+            Damage = SwordDamage;
+            Sword.SetActive(true);
+            Wand.SetActive(false);
             Foxmove = false;
             Debug.Log("JJJJJ");
             AttackTime = Time.time;
@@ -81,12 +92,26 @@ public class Fox_controller : Living
             Combocount = Mathf.Clamp(Combocount, 0, 3);
 
         }
+        if (Input.GetKeyDown(KeyCode.K)&& FoxAttack)
+        {
+            FoxAttack = false;
+            Damage = WandDamage;
+            Wand.SetActive(true);
+            Sword.SetActive(false);
+            Foxmove = false;
+            Debug.Log("KKK");
+            ani.SetTrigger("WandAttack");
+            Invoke("FoxmoveControll", 0.5f);
+            Combocount = 0;
+            return3();
+            Invoke("FoxAttackControll", 2f);
+
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Foxmove = false;
             ani.SetTrigger("PlayerRoll");
-            Player.transform.position = this.transform.position;
-            Invoke("FoxmoveControll", 1f);
+            Invoke("FoxmoveControll", 0.5f);
 
         }
 
@@ -130,6 +155,10 @@ public class Fox_controller : Living
         Combocount = 0;
     }
 
+    private void FoxAttackControll()
+    {
+        FoxAttack = true;
+    }
     private void FoxmoveControll()
     {
         Foxmove = true;
