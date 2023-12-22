@@ -7,7 +7,7 @@ public class Target_Scanner : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private float range;
-    private string enemyTag = "Enemy";
+    private string enemyTag = "TargetPoint";
 
     private void Start()
     {

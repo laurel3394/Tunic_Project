@@ -27,6 +27,7 @@ public class Fox_controller : Living
 
     private void Awake()
     {
+        Onenable();
         Fox_instance();
         Sword.SetActive(false);
         Wand.SetActive(false);
@@ -107,7 +108,7 @@ public class Fox_controller : Living
             Invoke("FoxAttackControll", 2f);
 
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Foxmove)
         {
             Foxmove = false;
             ani.SetTrigger("PlayerRoll");

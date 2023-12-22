@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - TargetPoint
   layers:
   - Default
   - TransparentFX
@@ -17,11 +18,11 @@ TagManager:
   - 
   - Player
   - Enemy
+  - TargetPoint
   - 
   - 
-  - 
-  - 
-  - 
+  - PlayerAttack
+  - EnemyAttack
   - 
   - 
   - 
