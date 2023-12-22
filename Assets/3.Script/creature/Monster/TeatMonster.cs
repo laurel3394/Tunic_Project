@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TeatMonster : Living
 {
-    [SerializeField] private float MonsterDamage;
+    [SerializeField] public float MonsterDamage;
 
 
     private void Awake()
