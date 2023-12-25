@@ -8,7 +8,6 @@ public class Fox_controller : Living
     [Header("플레이어 정보")]
     [SerializeField] private GameObject Sword;
     [SerializeField] private GameObject Wand;
-    [SerializeField] private float Fox_Speed;
     [SerializeField] private float Fox_Rot_Speed;
     [SerializeField] public int Damage;
     [SerializeField] private int SwordDamage;
@@ -57,7 +56,7 @@ public class Fox_controller : Living
         {
 
             // 이동
-            transform.position += dir * Fox_Speed * Time.deltaTime;
+            transform.position += dir * Speed * Time.deltaTime;
             // 회전
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * Fox_Rot_Speed);
             ani.SetBool("PlayerWalk", true);

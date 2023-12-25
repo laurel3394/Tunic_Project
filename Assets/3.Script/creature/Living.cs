@@ -8,6 +8,7 @@ public class Living : MonoBehaviour
 
     [Header("기본정보")]
     [SerializeField] protected int StartHp;
+    [SerializeField] protected float Speed;
     [SerializeField] protected float DieTime;
     public bool isDead { get; protected set; }
 
