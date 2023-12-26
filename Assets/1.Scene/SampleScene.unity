@@ -5153,7 +5153,7 @@ GameObject:
   - component: {fileID: 919132148851628529}
   m_Layer: 9
   m_Name: _Fox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8564,7 +8564,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6423e911abb2ce34b9efb6fa89cb7294, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -8617,7 +8617,7 @@ MonoBehaviour:
   Speed: 0.075
   DieTime: 1
   checkDamage: 0
-  BossMoveControll: 1
+  BossMoveControll: 0
 --- !u!4 &1901030607453628290
 Transform:
   m_ObjectHideFlags: 0
