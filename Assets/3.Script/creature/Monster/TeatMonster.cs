@@ -6,7 +6,6 @@ public class TeatMonster : Living
 {
     [SerializeField] public float MonsterDamage;
 
-
     private void Awake()
     {
         Onenable();

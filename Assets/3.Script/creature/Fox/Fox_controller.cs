@@ -21,7 +21,6 @@ public class Fox_controller : Living
     private float maxComboDelay = 1.2f;
 
     private Rigidbody rigi;
-    private Animator ani;
     private float h, v;  //πÊ«‚
 
     private void Awake()
@@ -33,6 +32,7 @@ public class Fox_controller : Living
     }
     private void Start()
     {
+       
         ani = GetComponent<Animator>();
         rigi = GetComponent<Rigidbody>();
 
@@ -112,7 +112,6 @@ public class Fox_controller : Living
             Foxmove = false;
             ani.SetTrigger("PlayerRoll");
             Invoke("FoxmoveControll", 0.5f);
-
         }
 
     }
@@ -176,6 +175,20 @@ public class Fox_controller : Living
             Destroy(gameObject);
         }
     }
+    public void PlayerRollMask()
+    {
+        gameObject.layer = LayerMask.NameToLayer("PlayerRoll");
+    }
+    public void PlayerMask()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Player");
+    }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Boss_Attack"))
+        {
+            OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+        }
+    }
 }

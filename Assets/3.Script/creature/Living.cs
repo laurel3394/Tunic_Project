@@ -10,6 +10,8 @@ public class Living : MonoBehaviour
     [SerializeField] protected int StartHp;
     [SerializeField] protected float Speed;
     [SerializeField] protected float DieTime;
+
+    protected Animator ani;
     public bool isDead { get; protected set; }
 
     protected virtual void Onenable()
