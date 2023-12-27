@@ -19,7 +19,6 @@ public class Fox_controller : Living
     [SerializeField] private int Combocount = 0;
     private float AttackTime = 0;
     private float maxComboDelay = 1.2f;
-
     private Rigidbody rigi;
     private float h, v;  //방향
 
@@ -50,11 +49,10 @@ public class Fox_controller : Living
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
-        Vector3 dir = new Vector3(h, 0, v); 
+        Vector3 dir = new Vector3(h, 0, v);
 
         if (!(h == 0 && v == 0) && Foxmove)
         {
-
             // 이동
             transform.position += dir * Speed * Time.deltaTime;
             // 회전
@@ -66,11 +64,12 @@ public class Fox_controller : Living
             ani.SetBool("PlayerWalk", false);
         }
 
-
     }
 
     private void Fox_Attack()
     {
+        Vector3 dir = new Vector3(h, 0, v);
+
         if (Time.time - AttackTime > maxComboDelay)
         {
             Combocount = 0;
@@ -110,6 +109,7 @@ public class Fox_controller : Living
         if (Input.GetKeyDown(KeyCode.Space) && Foxmove)
         {
             Foxmove = false;
+            transform.rotation = Quaternion.LookRotation(dir);
             ani.SetTrigger("PlayerRoll");
             Invoke("FoxmoveControll", 0.5f);
         }
