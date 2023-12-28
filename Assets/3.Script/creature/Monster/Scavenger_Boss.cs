@@ -281,7 +281,7 @@ public class Scavenger_Boss : Living
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack") || other.gameObject.layer == LayerMask.NameToLayer("EnemyAttack"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
             StartCoroutine(Boss_Hit());
             OnDamage(Fox_controller.instance.Damage, DieTime);

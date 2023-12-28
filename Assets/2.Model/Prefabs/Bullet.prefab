@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: -3666833906958804516}
   - component: {fileID: 5578178194682131733}
   - component: {fileID: -230633483900330415}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Boss_Hard_Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

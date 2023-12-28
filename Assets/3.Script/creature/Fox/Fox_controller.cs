@@ -194,9 +194,13 @@ public class Fox_controller : Living
         gameObject.layer = LayerMask.NameToLayer("Player");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)   //맞는 애니메이션 적용
     {
         if (other.CompareTag("Boss_Attack"))
+        {
+            OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+        }
+        if (other.CompareTag("Boss_Hard_Attack"))
         {
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
         }
