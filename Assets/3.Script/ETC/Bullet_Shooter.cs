@@ -10,7 +10,7 @@ public class Bullet_Shooter : MonoBehaviour
         Vector3 dir = Fox_controller.instance.transform.position - transform.position;
         dir.y = 0;
         dir = dir.normalized;
-        GetComponent<Rigidbody>().AddForce(dir * Bullet_Speed * Time.deltaTime, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(dir * Bullet_Speed, ForceMode.Impulse);
     }
 
 }

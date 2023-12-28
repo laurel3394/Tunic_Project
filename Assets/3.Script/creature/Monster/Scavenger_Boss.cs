@@ -22,6 +22,8 @@ public class Scavenger_Boss : Living
     [SerializeField] private GameObject weapon4;
     [SerializeField] private GameObject Bullet;
     [SerializeField] private GameObject BulletSpawner;
+    [SerializeField] private TrailRenderer Beam1;
+    [SerializeField] private TrailRenderer Beam2;
 
     private void Awake()
     {
@@ -30,8 +32,7 @@ public class Scavenger_Boss : Living
     }
     private void Start()
     {
-        //StartCoroutine(Think_Action());
-        StartCoroutine(Boss_Shoot());
+        StartCoroutine(Think_Action());
     }
     private void Update()
     {
@@ -76,7 +77,7 @@ public class Scavenger_Boss : Living
             yield return null;
         
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance <= 0.05f)
+            if (distance <= 2.5f)
             {
                 BossMoveControll = false;
                 ani.SetTrigger("Boss_Kick");
@@ -96,12 +97,12 @@ public class Scavenger_Boss : Living
     {
         while (true)
         {
-            MonsterDamage = 10;
+            MonsterDamage = 25;
             Boss_Move();
             yield return null;
 
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance >= 0.055 && distance <= 0.15f)
+            if (distance >= 3 && distance <= 15f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -111,7 +112,7 @@ public class Scavenger_Boss : Living
                 Boss_NextAction();
                 break;
             }
-            else if (distance <= 0.05f)
+            else if (distance <= 2.5f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -132,11 +133,11 @@ public class Scavenger_Boss : Living
     {
         while (true)
         {
-            MonsterDamage = 15;
+            MonsterDamage = 30;
             Boss_Move();
             yield return null;
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance >= 0.08 && distance <= 0.15)
+            if (distance >= 3f && distance <= 15)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -146,7 +147,7 @@ public class Scavenger_Boss : Living
                 Boss_NextAction();
                 break;
             }
-            else if (distance <= 0.05f)
+            else if (distance <= 2.5f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -170,7 +171,7 @@ public class Scavenger_Boss : Living
             Boss_Move();
             yield return null;
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance <= 0.07)
+            if (distance <= 2.5f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -190,7 +191,7 @@ public class Scavenger_Boss : Living
             Boss_Move();
             yield return null;
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance >= 0.08 && distance <= 0.15)
+            if (distance >= 5 && distance <= 15)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -200,7 +201,7 @@ public class Scavenger_Boss : Living
                 Boss_NextAction();
                 break;
             }
-            else if (distance <= 0.05f)
+            else if (distance <= 2.5f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -248,6 +249,7 @@ public class Scavenger_Boss : Living
 
     private void Boss_Move()
     {
+        Turnoff();
         if (BossMoveControll)
         {
             ani.SetBool("Boss_Run", true);
@@ -263,7 +265,20 @@ public class Scavenger_Boss : Living
         }        
     }
    
-
+    private void Turnoff()
+    {
+        Beam1.GetComponent<TrailRenderer>();
+        Beam1.emitting = false;
+        Beam2.GetComponent<TrailRenderer>();
+        Beam2.emitting = false;
+    }
+    private void TurnOn()
+    {
+        Beam1.GetComponent<TrailRenderer>();
+        Beam1.emitting = true;
+        Beam2.GetComponent<TrailRenderer>();
+        Beam2.emitting = true;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack") || other.gameObject.layer == LayerMask.NameToLayer("EnemyAttack"))

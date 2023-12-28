@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7172011046223291039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.050265543, y: 0.025371755, z: 0.13032988}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82002f0858afc0f478f95fbedca7ee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet_Speed: 70
+  Bullet_Speed: 25
 --- !u!96 &-230633483900330415
 TrailRenderer:
   serializedVersion: 2
@@ -172,13 +172,13 @@ TrailRenderer:
   m_Time: 0.5
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 5
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.12096904
+        value: 0.19240308
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -186,8 +186,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.40973577
-        value: 0.10484664
+        time: 0.53002083
+        value: 0.128658
         inSlope: -0.25812578
         outSlope: -0.25812578
         tangentMode: 0
@@ -241,6 +241,6 @@ TrailRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 1
   m_Autodestruct: 0
   m_Emitting: 1
