@@ -10,7 +10,18 @@ public class Scavenger_Boss : Living
     [SerializeField] private bool BossMoveControll = true;
     [SerializeField] private bool BossMeleeAttack;
     [SerializeField] private float ThinkTime;
-
+    [Header("보스 머티리얼")]
+    [SerializeField] private GameObject BossBody;
+    [SerializeField] private SkinnedMeshRenderer skinned;
+    [SerializeField] private Material mat;
+    [SerializeField] private Material mat2;
+    [Header("사소한 무기 빔")]
+    [SerializeField] private GameObject weapon1;
+    [SerializeField] private GameObject weapon2;
+    [SerializeField] private GameObject weapon3;
+    [SerializeField] private GameObject weapon4;
+    [SerializeField] private GameObject Bullet;
+    [SerializeField] private GameObject BulletSpawner;
 
     private void Awake()
     {
@@ -19,7 +30,8 @@ public class Scavenger_Boss : Living
     }
     private void Start()
     {
-        StartCoroutine(Think_Action());
+        //StartCoroutine(Think_Action());
+        StartCoroutine(Boss_Shoot());
     }
     private void Update()
     {
@@ -28,6 +40,7 @@ public class Scavenger_Boss : Living
     private IEnumerator Think_Action()                   //행동패턴
     {
         BossMoveControll = false;
+        skinned.material = mat;
         Boss_Move();
         yield return new WaitForSeconds(ThinkTime);
         BossMoveControll = true;
@@ -207,7 +220,25 @@ public class Scavenger_Boss : Living
         }
     }
 
-
+    private IEnumerator Boss_Hit()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            skinned.material = mat;
+            yield return new WaitForSeconds(0.05f);
+            skinned.material = mat2;
+            yield return new WaitForSeconds(0.05f);
+            skinned.material = mat;
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+    private IEnumerator Boss_Bullet()
+    {
+        GameObject bullet = Instantiate(Bullet, BulletSpawner.transform.position,Bullet.transform.rotation);
+        //bullet.transform.position = BulletSpawner.transform.position;
+        Destroy(bullet, 5);
+        yield return null;
+    }
     private void Boss_NextAction()
     {
         BossMoveControll = true;
@@ -217,18 +248,6 @@ public class Scavenger_Boss : Living
 
     private void Boss_Move()
     {
-        //float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-        //if (distance <= 0.05f && !BossMeleeAttack)
-        //{
-        //    BossMoveControll = false;
-        //    Vector3 dir = Fox_controller.instance.gameObject.transform.position - this.transform.position;
-        //    dir.y = 0;
-        //    this.transform.forward = dir.normalized;
-        //}
-        //if (distance >= 0.05f && !BossMeleeAttack)
-        //{
-        //    BossMoveControll = true;
-        //}
         if (BossMoveControll)
         {
             ani.SetBool("Boss_Run", true);
@@ -249,10 +268,15 @@ public class Scavenger_Boss : Living
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack") || other.gameObject.layer == LayerMask.NameToLayer("EnemyAttack"))
         {
+            StartCoroutine(Boss_Hit());
             OnDamage(Fox_controller.instance.Damage, DieTime);
         }
         if (currentHp <=0)
         {
+            weapon1.SetActive(false);
+            weapon2.SetActive(false);
+            weapon3.SetActive(false);
+            weapon4.SetActive(false);
             Boss_Layer();
             ani.SetBool("Boss_Die",true );
             StopAllCoroutines();

@@ -8,15 +8,15 @@ public class Target_Scanner : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float range;
     private string enemyTag = "TargetPoint";
-
     private void Start()
     {
 
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && Fox_controller.instance.FoxFocus)
         {
+
             UpdateTarget();
             if (target == null)
             {

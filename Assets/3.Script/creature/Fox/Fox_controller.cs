@@ -8,6 +8,7 @@ public class Fox_controller : Living
     [Header("플레이어 정보")]
     [SerializeField] private GameObject Sword;
     [SerializeField] private GameObject Wand;
+    [SerializeField] private GameObject Beam;
     [SerializeField] private float Fox_Rot_Speed;
     [SerializeField] public int Damage;
     [SerializeField] private int SwordDamage;
@@ -15,6 +16,8 @@ public class Fox_controller : Living
 
     private bool Foxmove = true;
     private bool FoxAttack = true;
+    public bool FoxFocus = true;
+    
     [Header("확인용")]
     [SerializeField] private int Combocount = 0;
     private float AttackTime = 0;
@@ -81,7 +84,6 @@ public class Fox_controller : Living
             Sword.SetActive(true);
             Wand.SetActive(false);
             Foxmove = false;
-            Debug.Log("JJJJJ");
             AttackTime = Time.time;
             Combocount++;
             if (Combocount == 1)
@@ -98,7 +100,6 @@ public class Fox_controller : Living
             Wand.SetActive(true);
             Sword.SetActive(false);
             Foxmove = false;
-            Debug.Log("KKK");
             ani.SetTrigger("WandAttack");
             Invoke("FoxmoveControll", 0.5f);
             Combocount = 0;
@@ -108,6 +109,7 @@ public class Fox_controller : Living
         }
         if (Input.GetKeyDown(KeyCode.Space) && Foxmove)
         {
+            FoxFocus = false;
             Foxmove = false;
             transform.rotation = Quaternion.LookRotation(dir);
             ani.SetTrigger("PlayerRoll");
@@ -154,6 +156,13 @@ public class Fox_controller : Living
         Combocount = 0;
     }
 
+    private IEnumerator Fox_Wand_Beam()
+    {
+        Beam.SetActive(true);
+        yield return new WaitForSeconds(0.03f);
+        Beam.SetActive(false);
+    }
+
     private void FoxAttackControll()
     {
         FoxAttack = true;
@@ -161,6 +170,7 @@ public class Fox_controller : Living
     private void FoxmoveControll()
     {
         Foxmove = true;
+        FoxFocus = true;
     }
 
     private void Fox_instance()
