@@ -242,6 +242,9 @@ public class Fox_controller : Living
         if (other.CompareTag("Boss_Attack"))
         {
             Combocount = 0;
+            ani.SetBool("Attack", false);
+            ani.SetBool("Attack1", false);
+            ani.SetBool("Attack2", false);
             StartCoroutine(PlayerHit());
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
@@ -249,9 +252,16 @@ public class Fox_controller : Living
         if (other.CompareTag("Boss_Hard_Attack"))
         {
             Combocount = 0;
+            ani.SetBool("Attack", false);
+            ani.SetBool("Attack1", false);
+            ani.SetBool("Attack2", false);
             StartCoroutine(PlayerHardHIt());
             CameraControll.instance.OnShakeCamera(0.1f, 2.5f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+        }
+        if (currentHp<=0)
+        {
+            ani.SetTrigger("Fox_Die");
         }
     }
 }

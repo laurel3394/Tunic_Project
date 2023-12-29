@@ -300,7 +300,7 @@ public class Scavenger_Boss : Living
             weapon4.SetActive(false);
             TargetPoint.tag = "Enemy";
             Boss_Layer();
-            ani.SetBool("Boss_Die",true );
+            ani.SetTrigger("Boss_Die");
             StopAllCoroutines();
         }
     }
