@@ -22,6 +22,7 @@ public class Scavenger_Boss : Living
     [SerializeField] private GameObject weapon4;
     [SerializeField] private GameObject Bullet;
     [SerializeField] private GameObject BulletSpawner;
+    [SerializeField] private GameObject TargetPoint;
     [SerializeField] private TrailRenderer Beam1;
     [SerializeField] private TrailRenderer Beam2;
 
@@ -77,7 +78,7 @@ public class Scavenger_Boss : Living
             yield return null;
         
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance <= 2.5f)
+            if (distance <= 2.2f)
             {
                 BossMoveControll = false;
                 ani.SetTrigger("Boss_Kick");
@@ -102,7 +103,7 @@ public class Scavenger_Boss : Living
             yield return null;
 
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance >= 3 && distance <= 15f)
+            if (distance >= 3 && distance <= 10f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -171,7 +172,7 @@ public class Scavenger_Boss : Living
             Boss_Move();
             yield return null;
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance <= 2.5f)
+            if (distance <= 2f)
             {
                 BossMoveControll = false;
                 Boss_Move();
@@ -242,6 +243,10 @@ public class Scavenger_Boss : Living
     }
     private void Boss_NextAction()
     {
+        if (Fox_controller.instance.isDead)
+        {
+            return;
+        }
         BossMoveControll = true;
         StopAllCoroutines();
         StartCoroutine(Think_Action());
@@ -283,6 +288,7 @@ public class Scavenger_Boss : Living
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
+            CameraControll.instance.OnShakeCamera(0.1f, 1f);
             StartCoroutine(Boss_Hit());
             OnDamage(Fox_controller.instance.Damage, DieTime);
         }
@@ -292,6 +298,7 @@ public class Scavenger_Boss : Living
             weapon2.SetActive(false);
             weapon3.SetActive(false);
             weapon4.SetActive(false);
+            TargetPoint.tag = "Enemy";
             Boss_Layer();
             ani.SetBool("Boss_Die",true );
             StopAllCoroutines();

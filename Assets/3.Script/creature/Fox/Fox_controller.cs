@@ -14,6 +14,12 @@ public class Fox_controller : Living
     [SerializeField] private int SwordDamage;
     [SerializeField] private int WandDamage;
 
+    [Header("머티리얼")]
+    [SerializeField] private GameObject FoxBody;
+    [SerializeField] private SkinnedMeshRenderer skinned;
+    [SerializeField] private Material mat;
+    [SerializeField] private Material mat2;
+
     private bool Foxmove = true;
     private bool FoxAttack = true;
     public bool FoxFocus = true;
@@ -54,7 +60,7 @@ public class Fox_controller : Living
 
         Vector3 dir = new Vector3(h, 0, v);
 
-        if (!(h == 0 && v == 0) && Foxmove)
+        if (!(h == 0 && v == 0) && Foxmove && !isDead)
         {
             // 이동
             transform.position += dir * Speed * Time.deltaTime;
@@ -78,7 +84,7 @@ public class Fox_controller : Living
             Combocount = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && !isDead)
         {
             Damage = SwordDamage;
             Sword.SetActive(true);
@@ -93,7 +99,7 @@ public class Fox_controller : Living
             Combocount = Mathf.Clamp(Combocount, 0, 3);
 
         }
-        if (Input.GetKeyDown(KeyCode.K)&& FoxAttack)
+        if (Input.GetKeyDown(KeyCode.K)&& FoxAttack && !isDead)
         {
             FoxAttack = false;
             Damage = WandDamage;
@@ -107,7 +113,7 @@ public class Fox_controller : Living
             Invoke("FoxAttackControll", 2f);
 
         }
-        if (Input.GetKeyDown(KeyCode.Space) && Foxmove)
+        if (Input.GetKeyDown(KeyCode.Space) && Foxmove && !isDead)
         {
             FoxFocus = false;
             Foxmove = false;
@@ -118,7 +124,44 @@ public class Fox_controller : Living
 
     }
 
-        public void return1()
+    private IEnumerator PlayerHit()
+    {
+        FoxFocus = false;
+        Foxmove = false;
+        StartCoroutine(Fox_Hit());
+        ani.SetTrigger("PlayerHurt");
+        yield return new WaitForSeconds(0.8f);
+        FoxFocus = true;
+        Foxmove = true;
+        ani.ResetTrigger("PlayerHurt");
+    }
+    private IEnumerator PlayerHardHIt()
+    {
+        FoxFocus = false;
+        Foxmove = false;
+        StartCoroutine(Fox_Hit());
+        ani.SetTrigger("Playerstagger");
+        yield return new WaitForSeconds(0.750f);
+        FoxFocus = true;
+        Foxmove = true;
+        ani.ResetTrigger("Playerstagger");
+
+    }
+    private IEnumerator Fox_Hit()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            skinned.material = mat;
+            yield return new WaitForSeconds(0.05f);
+            skinned.material = mat2;
+            yield return new WaitForSeconds(0.05f);
+            skinned.material = mat;
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+
+    public void return1()
     {
         if (Combocount >=2)
         {
@@ -159,7 +202,7 @@ public class Fox_controller : Living
     private IEnumerator Fox_Wand_Beam()
     {
         Beam.SetActive(true);
-        yield return new WaitForSeconds(0.03f);
+        yield return new WaitForSeconds(0.035f);
         Beam.SetActive(false);
     }
 
@@ -198,10 +241,16 @@ public class Fox_controller : Living
     {
         if (other.CompareTag("Boss_Attack"))
         {
+            Combocount = 0;
+            StartCoroutine(PlayerHit());
+            CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
         }
         if (other.CompareTag("Boss_Hard_Attack"))
         {
+            Combocount = 0;
+            StartCoroutine(PlayerHardHIt());
+            CameraControll.instance.OnShakeCamera(0.1f, 2.5f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
         }
     }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -230633483900330415}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Boss_Hard_Attack
+  m_TagString: Boss_Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 5830562058482289310, guid: bd6779a4242a8d447983b18d28473473, type: 3}
+  m_Mesh: {fileID: 8130696998669138720, guid: e8509ab375c89ec47bd3800e6598eec3, type: 3}
 --- !u!54 &-3666833906958804516
 Rigidbody:
   m_ObjectHideFlags: 0
