@@ -239,7 +239,7 @@ public class Fox_controller : Living
 
     private void OnTriggerEnter(Collider other)   //맞는 애니메이션 적용
     {
-        if (other.CompareTag("Boss_Attack"))
+        if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             Combocount = 0;
             ani.SetBool("Attack", false);
@@ -249,7 +249,7 @@ public class Fox_controller : Living
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
         }
-        if (other.CompareTag("Boss_Hard_Attack"))
+        if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             Combocount = 0;
             ani.SetBool("Attack", false);
