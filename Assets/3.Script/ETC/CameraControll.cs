@@ -31,8 +31,7 @@ public class CameraControll : MonoBehaviour
     {
         this.shakeTime = shakeTime;
         this.shakeIntensity = shakeIntensity;
-
-        StartCoroutine("ShakeByRotation");
+        StartCoroutine(ShakeByRotation());
     }
 
     private IEnumerator ShakeByRotation()
@@ -53,5 +52,4 @@ public class CameraControll : MonoBehaviour
         }
         transform.rotation = Quaternion.Euler(startRotation);
     }
-
 }

@@ -237,7 +237,6 @@ public class Scavenger_Boss : Living
     private IEnumerator Boss_Bullet()
     {
         GameObject bullet = Instantiate(Bullet, BulletSpawner.transform.position,Bullet.transform.rotation);
-        //bullet.transform.position = BulletSpawner.transform.position;
         Destroy(bullet, 5);
         yield return null;
     }
@@ -284,6 +283,11 @@ public class Scavenger_Boss : Living
         Beam2.GetComponent<TrailRenderer>();
         Beam2.emitting = true;
     }
+    private void BossDieEvent()               //이거 수정 필요
+    {
+        Time.timeScale = 1;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
@@ -300,6 +304,8 @@ public class Scavenger_Boss : Living
             weapon4.SetActive(false);
             TargetPoint.tag = "Enemy";
             Boss_Layer();
+            Time.timeScale = 0.5f;
+            Invoke("BossDieEvent", 2f);                 //보스 죽고 슬로우 시간 
             ani.SetTrigger("Boss_Die");
             StopAllCoroutines();
         }
