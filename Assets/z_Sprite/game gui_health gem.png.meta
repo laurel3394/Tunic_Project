@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: 62683b8861eb10f4d897e0ea9b87ea34
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 742636772282954769
+    second: game gui_health gem_0
+  - first:
+      213: -3951555904074401607
+    second: game gui_health gem_1
+  - first:
+      213: 3624299223506319465
+    second: Down
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +110,78 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: game gui_health gem_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 110
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1147111b5306e4a00800000000000000
+      internalID: 742636772282954769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game gui_health gem_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 110
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -0.5}
+        - {x: 0, y: 31.5}
+        - {x: 54, y: -0.5}
+        - {x: 0, y: -31.5}
+      physicsShape:
+      - - {x: -55, y: -0.5}
+        - {x: -0.023838043, y: 30.849228}
+        - {x: 55, y: -0.5}
+        - {x: 0, y: -30.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b83c8b67d04929c0800000000000000
+      internalID: -3951555904074401607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 110
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96871d001f81c4230800000000000000
+      internalID: 3624299223506319465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
