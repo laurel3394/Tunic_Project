@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Living : MonoBehaviour
 {
-    [SerializeField] protected int currentHp;  //확인용
-    [SerializeField] protected int currentSp;
+    [SerializeField] protected float currentHp;  //확인용
+    [SerializeField] protected float currentSp;
 
     [Header("기본정보")]
-    [SerializeField] protected int StartHp;
-    [SerializeField] protected int StartSp;
+    [SerializeField] protected float StartHp;
+    [SerializeField] protected float StartSp;
     [SerializeField] protected float Speed;
     [SerializeField] protected float DieTime;
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Scavenger_Boss : Living
@@ -25,6 +26,13 @@ public class Scavenger_Boss : Living
     [SerializeField] private GameObject TargetPoint;
     [SerializeField] private TrailRenderer Beam1;
     [SerializeField] private TrailRenderer Beam2;
+    [Header("UI")]
+    [SerializeField] private Slider Boss_Hpslider;
+    [SerializeField] private GameObject forntHp;
+    [SerializeField] private GameObject EndHp;
+    [SerializeField] private GameObject Boss_Hp;
+    [SerializeField] private GameObject Boss_UI;
+
 
     private void Awake()
     {
@@ -33,12 +41,32 @@ public class Scavenger_Boss : Living
     }
     private void Start()
     {
-        StartCoroutine(Think_Action());
+        Boss_Hpslider.maxValue = currentHp;
+        Boss_Hpslider.value = currentHp;
+        StartCoroutine(Fox_Scanner());
     }
     private void Update()
     {
         checkDamage = MonsterDamage;
     }
+
+    private IEnumerator Fox_Scanner()
+    {
+        while (true)
+        {
+           float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
+            if (distance <= 10f)
+            {
+                Boss_Hp.SetActive(true);
+                Boss_UI.SetActive(true);
+                yield return new WaitForSeconds(0.5f);
+                StartCoroutine(Think_Action());
+                break;
+            }
+            yield return null;
+        }
+    }
+
     private IEnumerator Think_Action()                   //행동패턴
     {
         BossMoveControll = false;
@@ -283,6 +311,12 @@ public class Scavenger_Boss : Living
         Beam2.GetComponent<TrailRenderer>();
         Beam2.emitting = true;
     }
+    private void BossUIcontroll()
+    {
+        Boss_Hp.SetActive(false);
+        Boss_UI.SetActive(false);
+    }
+
     private void BossDieEvent()               //이거 수정 필요
     {
         Time.timeScale = 1;
@@ -295,9 +329,12 @@ public class Scavenger_Boss : Living
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
             StartCoroutine(Boss_Hit());
             OnDamage(Fox_controller.instance.Damage, DieTime);
+            Boss_Hpslider.value = currentHp;
+            forntHp.SetActive(false);
         }
         if (currentHp <=0)
         {
+            EndHp.SetActive(false);
             weapon1.SetActive(false);
             weapon2.SetActive(false);
             weapon3.SetActive(false);
@@ -307,6 +344,7 @@ public class Scavenger_Boss : Living
             Time.timeScale = 0.5f;
             Invoke("BossDieEvent", 2f);                 //보스 죽고 슬로우 시간 
             ani.SetTrigger("Boss_Die");
+            Invoke("BossUIcontroll", 3f);
             StopAllCoroutines();
         }
     }

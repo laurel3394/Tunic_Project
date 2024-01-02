@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fox_controller : Living
 {
@@ -10,6 +11,7 @@ public class Fox_controller : Living
     [SerializeField] private GameObject Wand;
     [SerializeField] private GameObject Beam;
     [SerializeField] private float Fox_Rot_Speed;
+    [SerializeField] private float Fox_SPrecovery_Speed;
     [SerializeField] public int Damage;
     [SerializeField] private int SwordDamage;
     [SerializeField] private int WandDamage;
@@ -23,6 +25,7 @@ public class Fox_controller : Living
     private bool Foxmove = true;
     private bool FoxAttack = true;
     public bool FoxFocus = true;
+    public bool FoxExhausted = false;
     
     [Header("확인용")]
     [SerializeField] private int Combocount = 0;
@@ -30,6 +33,12 @@ public class Fox_controller : Living
     private float maxComboDelay = 1.2f;
     private Rigidbody rigi;
     private float h, v;  //방향
+
+    [Header("UI")]
+    [SerializeField] private Slider HPslider;
+    [SerializeField] private Slider SPslider;
+
+
 
     private void Awake()
     {
@@ -40,13 +49,28 @@ public class Fox_controller : Living
     }
     private void Start()
     {
-       
+        HPslider.maxValue= currentHp;
+        SPslider.maxValue = currentSp;
+        HPslider.value = currentHp;
+        SPslider.value = currentSp;
         ani = GetComponent<Animator>();
         rigi = GetComponent<Rigidbody>();
 
     }
     private void Update()
     {
+        if (currentSp<=0)
+        {
+            currentSp = 1f;
+            FoxExhausted = true;
+        }
+        currentSp += Fox_SPrecovery_Speed * Time.deltaTime;
+        if (currentSp >=StartSp)
+        {
+            currentSp = StartSp;
+            FoxExhausted = false;
+        }
+        SPslider.value = currentSp;
         Fox_Attack();
     }
     void FixedUpdate()
@@ -99,10 +123,11 @@ public class Fox_controller : Living
             Combocount = Mathf.Clamp(Combocount, 0, 3);
 
         }
-        if (Input.GetKeyDown(KeyCode.K)&& FoxAttack && !isDead)
+        if (Input.GetKeyDown(KeyCode.K)&& FoxAttack && !isDead && !FoxExhausted)
         {
             FoxAttack = false;
             Damage = WandDamage;
+            FoxSp(45);
             Wand.SetActive(true);
             Sword.SetActive(false);
             Foxmove = false;
@@ -115,6 +140,11 @@ public class Fox_controller : Living
         }
         if (Input.GetKeyDown(KeyCode.Space) && Foxmove && !isDead)
         {
+            if (currentSp < 30)
+            {
+                return;
+            }
+            FoxSp(30);
             FoxFocus = false;
             Foxmove = false;
             transform.rotation = Quaternion.LookRotation(dir);
@@ -160,7 +190,11 @@ public class Fox_controller : Living
         }
     }
 
-
+    private void FoxSp(int Sp)
+    {
+        currentSp -= Sp;
+        SPslider.value = currentSp;
+    }
     public void return1()
     {
         if (Combocount >=2)
@@ -236,7 +270,6 @@ public class Fox_controller : Living
     {
         gameObject.layer = LayerMask.NameToLayer("Player");
     }
-
     private void OnTriggerEnter(Collider other)   //맞는 애니메이션 적용
     {
         if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player"))
@@ -248,9 +281,12 @@ public class Fox_controller : Living
             StartCoroutine(PlayerHit());
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+            HPslider.value = currentHp;
+            SPslider.value = currentSp;
         }
         if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            this.transform.LookAt(other.transform.position);
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);
@@ -258,6 +294,8 @@ public class Fox_controller : Living
             StartCoroutine(PlayerHardHIt());
             CameraControll.instance.OnShakeCamera(0.1f, 2.5f);
             OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+            HPslider.value = currentHp;
+            SPslider.value = currentSp;
         }
         if (currentHp<=0)
         {
