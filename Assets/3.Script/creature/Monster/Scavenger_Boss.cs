@@ -16,6 +16,8 @@ public class Scavenger_Boss : Living
     [SerializeField] private SkinnedMeshRenderer skinned;
     [SerializeField] private Material mat;
     [SerializeField] private Material mat2;
+    [SerializeField] private Skybox skybox;
+    [SerializeField] private Material Defultskybox;
     [Header("사소한 무기 빔")]
     [SerializeField] private GameObject weapon1;
     [SerializeField] private GameObject weapon2;

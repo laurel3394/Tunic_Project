@@ -15,13 +15,14 @@ public class Fox_controller : Living
     [SerializeField] public int Damage;
     [SerializeField] private int SwordDamage;
     [SerializeField] private int WandDamage;
+    [SerializeField] private int Sp_Roll;
 
     [Header("머티리얼")]
     [SerializeField] private GameObject FoxBody;
     [SerializeField] private SkinnedMeshRenderer skinned;
     [SerializeField] private Material mat;
     [SerializeField] private Material mat2;
-
+    [SerializeField] private Skybox skybox;
     private bool Foxmove = true;
     private bool FoxAttack = true;
     public bool FoxFocus = true;
@@ -37,6 +38,7 @@ public class Fox_controller : Living
     [Header("UI")]
     [SerializeField] private Slider HPslider;
     [SerializeField] private Slider SPslider;
+    [SerializeField] private GameObject SPlight;
 
 
 
@@ -62,13 +64,17 @@ public class Fox_controller : Living
         if (currentSp<=0)
         {
             currentSp = 1f;
+            Sp_Roll = 60;
             FoxExhausted = true;
+            SPlight.SetActive(true);
         }
         currentSp += Fox_SPrecovery_Speed * Time.deltaTime;
         if (currentSp >=StartSp)
         {
             currentSp = StartSp;
+            Sp_Roll = 30;
             FoxExhausted = false;
+            SPlight.SetActive(false);
         }
         SPslider.value = currentSp;
         Fox_Attack();
@@ -140,16 +146,16 @@ public class Fox_controller : Living
         }
         if (Input.GetKeyDown(KeyCode.Space) && Foxmove && !isDead)
         {
-            if (currentSp < 30)
+            if (currentSp < Sp_Roll)
             {
                 return;
             }
-            FoxSp(30);
+            FoxSp(Sp_Roll);
             FoxFocus = false;
             Foxmove = false;
             transform.rotation = Quaternion.LookRotation(dir);
             ani.SetTrigger("PlayerRoll");
-            Invoke("FoxmoveControll", 0.5f);
+            Invoke("FoxmoveControll", 0.833f);
         }
 
     }
@@ -286,7 +292,9 @@ public class Fox_controller : Living
         }
         if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            this.transform.LookAt(other.transform.position);
+            Vector3 dir = other.transform.position - this.transform.position;
+            dir.y = 0;
+            this.transform.forward = dir.normalized;
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);
