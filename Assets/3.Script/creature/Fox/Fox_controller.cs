@@ -39,6 +39,9 @@ public class Fox_controller : Living
     [SerializeField] private Slider HPslider;
     [SerializeField] private Slider SPslider;
     [SerializeField] private GameObject SPlight;
+    [SerializeField] GameObject Potion_Slot1;
+    [SerializeField] GameObject Potion_Slot2;
+    [SerializeField] GameObject Potion_Slot3;
 
     [Header("Item")]
     public Queue<GameObject> Potion = new Queue<GameObject>();
@@ -60,6 +63,9 @@ public class Fox_controller : Living
         SPslider.value = currentSp;
         ani = GetComponent<Animator>();
         rigi = GetComponent<Rigidbody>();
+        Potion_Slot1.SetActive(false);
+        Potion_Slot2.SetActive(false);
+        Potion_Slot3.SetActive(false);
 
     }
     private void Update()
@@ -167,6 +173,21 @@ public class Fox_controller : Living
                 return;
             }
             PotionCount--;
+            switch (PotionCount)
+            {
+                case 1:
+                    Potion_Slot2.SetActive(false);
+                    Potion_Slot3.SetActive(false);
+                    break;
+                case 2:
+                    Potion_Slot3.SetActive(false);
+                    break;
+                default:
+                    Potion_Slot1.SetActive(false);
+                    Potion_Slot2.SetActive(false);
+                    Potion_Slot3.SetActive(false);
+                    break;
+            }
             Potion.Dequeue();
             currentHp += 20f;
             if (currentHp >= StartHp)

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Potion : MonoBehaviour
 {
+    [SerializeField] GameObject Slot1;
+    [SerializeField] GameObject Slot2;
+    [SerializeField] GameObject Slot3;
+
     private void Update()
     {
         if (Fox_controller.instance.PotionCount >= 3)
@@ -21,9 +25,19 @@ public class Potion : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (Fox_controller.instance.PotionCount>=3)
+            switch (Fox_controller.instance.PotionCount+1)
             {
-                return;
+                case 1:
+                    Slot1.SetActive(true);
+                    break;
+                case 2:
+                    Slot1.SetActive(true);
+                    break;
+                case 3:
+                    Slot1.SetActive(true);
+                    break;
+                default:
+                    break;
             }
             Fox_controller.instance.Potion.Enqueue(this.gameObject);
             Fox_controller.instance.PotionCount++;

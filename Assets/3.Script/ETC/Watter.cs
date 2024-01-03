@@ -15,7 +15,7 @@ public class Watter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Fox_controller.instance.Speed = 2;
+            Fox_controller.instance.Speed = 3;
 
         }
     }

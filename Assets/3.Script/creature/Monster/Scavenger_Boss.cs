@@ -34,7 +34,8 @@ public class Scavenger_Boss : Living
     [SerializeField] private GameObject EndHp;
     [SerializeField] private GameObject Boss_Hp;
     [SerializeField] private GameObject Boss_UI;
-
+    [Header("Æ÷Å»")]
+    [SerializeField] GameObject Potal;
 
     private void Awake()
     {
@@ -343,6 +344,7 @@ public class Scavenger_Boss : Living
             weapon2.SetActive(false);
             weapon3.SetActive(false);
             weapon4.SetActive(false);
+            Potal.SetActive(true);
             TargetPoint.tag = "Enemy";
             Boss_Layer();
             Time.timeScale = 0.5f;

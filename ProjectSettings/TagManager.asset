@@ -9,6 +9,7 @@ TagManager:
   - Boss_Attack
   - Boss_Hard_Attack
   - Watter
+  - Potal
   layers:
   - Default
   - TransparentFX
