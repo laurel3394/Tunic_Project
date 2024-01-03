@@ -10,7 +10,7 @@ public class Living : MonoBehaviour
     [Header("기본정보")]
     [SerializeField] protected float StartHp;
     [SerializeField] protected float StartSp;
-    [SerializeField] protected float Speed;
+    [SerializeField] public float Speed;
     [SerializeField] protected float DieTime;
 
     protected Animator ani;

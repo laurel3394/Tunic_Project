@@ -40,6 +40,9 @@ public class Fox_controller : Living
     [SerializeField] private Slider SPslider;
     [SerializeField] private GameObject SPlight;
 
+    [Header("Item")]
+    public Queue<GameObject> Potion = new Queue<GameObject>();
+    [SerializeField] public int PotionCount = 0;
 
 
     private void Awake()
@@ -157,6 +160,20 @@ public class Fox_controller : Living
             ani.SetTrigger("PlayerRoll");
             Invoke("FoxmoveControll", 0.833f);
         }
+        if (Input.GetKeyDown(KeyCode.P) && Foxmove && !isDead)
+        {
+            if (PotionCount <=0 || currentHp == StartHp)
+            {
+                return;
+            }
+            PotionCount--;
+            Potion.Dequeue();
+            currentHp += 20f;
+            if (currentHp >= StartHp)
+            {
+                currentHp = StartHp;
+            }
+        }
 
     }
 
@@ -177,7 +194,7 @@ public class Fox_controller : Living
         Foxmove = false;
         StartCoroutine(Fox_Hit());
         ani.SetTrigger("Playerstagger");
-        yield return new WaitForSeconds(0.750f);
+        yield return new WaitForSeconds(2f);               //0.750f
         FoxFocus = true;
         Foxmove = true;
         ani.ResetTrigger("Playerstagger");

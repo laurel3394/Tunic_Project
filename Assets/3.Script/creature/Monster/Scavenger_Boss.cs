@@ -62,6 +62,8 @@ public class Scavenger_Boss : Living
                 Boss_Hp.SetActive(true);
                 Boss_UI.SetActive(true);
                 yield return new WaitForSeconds(0.5f);
+                ani.SetTrigger("First");
+                yield return new WaitForSeconds(1.040f);
                 StartCoroutine(Think_Action());
                 break;
             }

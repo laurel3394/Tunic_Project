@@ -8,6 +8,7 @@ TagManager:
   - TargetPoint
   - Boss_Attack
   - Boss_Hard_Attack
+  - Watter
   layers:
   - Default
   - TransparentFX
