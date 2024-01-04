@@ -1646,6 +1646,87 @@ Transform:
   m_Father: {fileID: 261677116}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -0.000005843067, y: 0, z: 0}
+--- !u!1 &247650184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247650185}
+  - component: {fileID: 247650187}
+  - component: {fileID: 247650186}
+  m_Layer: 0
+  m_Name: potion_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &247650185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247650184}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322068062}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &247650186
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247650184}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8802cf297651f0540885feb0b6d83ecf, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &247650187
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247650184}
+  m_Mesh: {fileID: 807374300730377204, guid: 87aa4a5b85bedb743bcbb84080f86b0b, type: 3}
 --- !u!1 &250920595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2359,7 @@ GameObject:
   - component: {fileID: 332705204}
   - component: {fileID: 332705206}
   - component: {fileID: 332705205}
+  - component: {fileID: 332705207}
   m_Layer: 0
   m_Name: Combined_Mesh_(root:_scene)_31_1
   m_TagString: Untagged
@@ -2348,6 +2430,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332705203}
   m_Mesh: {fileID: -1544126705318846636, guid: 782a457ee37911c439c5ebd13ea35d53, type: 3}
+--- !u!65 &332705207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332705203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1859.6978, y: 2929.9614, z: 1732.6013}
+  m_Center: {x: 120.80112, y: 1489.0413, z: 231.16638}
 --- !u!1 &333252217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +3262,7 @@ MonoBehaviour:
   Light1: {fileID: 5083245049461432155}
   Light2: {fileID: 5083245050201353209}
   Light3: {fileID: 5083245049451407299}
+  D_Light: {fileID: 1778980980}
 --- !u!1 &454095342
 GameObject:
   m_ObjectHideFlags: 0
@@ -6046,6 +6142,87 @@ Transform:
   m_Father: {fileID: 1168322191}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 68.943, z: 0}
+--- !u!1 &869870866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869870867}
+  - component: {fileID: 869870869}
+  - component: {fileID: 869870868}
+  m_Layer: 0
+  m_Name: potion_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869870867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869870866}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322068062}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &869870868
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869870866}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ceb5b8b94558219408a81406b7637289, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &869870869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869870866}
+  m_Mesh: {fileID: -7121055008633072656, guid: 87aa4a5b85bedb743bcbb84080f86b0b, type: 3}
 --- !u!1001 &885309625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9797,6 +9974,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313466930}
   m_Mesh: {fileID: -3894705507235861547, guid: 5edc3937403b33a45b1e5a8549e7a792, type: 3}
+--- !u!1 &1322068058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322068062}
+  - component: {fileID: 1322068061}
+  - component: {fileID: 1322068060}
+  - component: {fileID: 1322068059}
+  m_Layer: 0
+  m_Name: potion (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1322068059
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322068058}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &1322068060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322068058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620e792cba4fade4aa48c3597c0ce570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slot1: {fileID: 4015356108556692594}
+  Slot2: {fileID: 4015356109197207654}
+  Slot3: {fileID: 4015356107484134956}
+--- !u!65 &1322068061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322068058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4568839, y: 0.6173824, z: 0.36011052}
+  m_Center: {x: -0.019202948, y: -0.11173403, z: 0.015910983}
+--- !u!4 &1322068062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322068058}
+  m_LocalRotation: {x: 0, y: 0.8985644, z: 0, w: 0.43884173}
+  m_LocalPosition: {x: 18.76, y: 5.86, z: 26.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 869870867}
+  - {fileID: 247650185}
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 127.94, z: 0}
 --- !u!1 &1334805818
 GameObject:
   m_ObjectHideFlags: 0
@@ -10998,6 +11254,7 @@ GameObject:
   - component: {fileID: 1582403884}
   - component: {fileID: 1582403883}
   - component: {fileID: 1582403882}
+  - component: {fileID: 1582403886}
   m_Layer: 0
   m_Name: shield 1
   m_TagString: shield
@@ -11093,6 +11350,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582403880}
   m_Mesh: {fileID: -5347691725479289114, guid: fec66e6dd2bf30b439231ada0f6fb974, type: 3}
+--- !u!54 &1582403886
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582403880}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1584333779
 GameObject:
   m_ObjectHideFlags: 0
@@ -14946,9 +15219,10 @@ GameObject:
   - component: {fileID: 2050268014}
   - component: {fileID: 2050268013}
   - component: {fileID: 2050268012}
+  - component: {fileID: 2050268016}
   m_Layer: 0
   m_Name: beefboy (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15028,6 +15302,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 225, z: 0}
+--- !u!54 &2050268016
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050268011}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2050605017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15670,7 +15960,7 @@ GameObject:
   - component: {fileID: 2674395937243346084}
   - component: {fileID: 2966663868852023092}
   - component: {fileID: 2652329963019770460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15688,7 +15978,7 @@ GameObject:
   - component: {fileID: 5497208266291373334}
   - component: {fileID: 874699314748784792}
   - component: {fileID: 916921741605440810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15704,7 +15994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7474270121798839172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15734,7 +16024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7019254595746376979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: base_rotator 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15752,7 +16042,7 @@ GameObject:
   - component: {fileID: 7853723953220780982}
   - component: {fileID: 4710034471954244033}
   - component: {fileID: 6721806158373862633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15769,7 +16059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2981553545292117060}
   - component: {fileID: 4904966733773558994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fox hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15787,7 +16077,7 @@ GameObject:
   - component: {fileID: 1887519153946488072}
   - component: {fileID: 7216993198303729726}
   - component: {fileID: 404874363311744442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15817,7 +16107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1772735421269972977}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: prayer'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16054,7 +16344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782126816284502655}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'SFX: Hourglass Event'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16080,7 +16370,7 @@ GameObject:
   - component: {fileID: 6604175919420703314}
   - component: {fileID: 701748429350779386}
   - component: {fileID: 1469333276708380170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dash arrow 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16137,7 +16427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 663331628222042493}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS distance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16188,7 +16478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 124136780369694486}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head_IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16396,7 +16686,7 @@ GameObject:
   - component: {fileID: 1669641509678314157}
   - component: {fileID: 8772948625473410681}
   - component: {fileID: 6664871683998118020}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_partway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16462,7 +16752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561578729428897215}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_pole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16480,7 +16770,7 @@ GameObject:
   - component: {fileID: 6715927697140195556}
   - component: {fileID: 6159353526011077974}
   - component: {fileID: 2698746415727632041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16577,7 +16867,7 @@ GameObject:
   - component: {fileID: 1058033544312004602}
   - component: {fileID: 5218015775996260623}
   - component: {fileID: 3572777294366873699}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: traces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16639,7 +16929,7 @@ GameObject:
   - component: {fileID: 8427647627422227527}
   - component: {fileID: 9057569771481062012}
   - component: {fileID: 4937759032564683878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: explosionfx_spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16836,7 +17126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4140995704146011384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hair_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17343,7 +17633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5065269154453145177}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17359,7 +17649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4680376149453135548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_lower.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17390,7 +17680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3424419342413972075}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'HT: Spear'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17428,7 +17718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561254807432292532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: end_bone_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17553,7 +17843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7040958885651471851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: frond.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17611,7 +17901,7 @@ GameObject:
   - component: {fileID: 4925176216432073350}
   - component: {fileID: 7307956224247479667}
   - component: {fileID: 3964669468023303063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dash arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17694,7 +17984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3612064913953114921}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS distance 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17710,7 +18000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5759207897857114237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_pole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17767,7 +18057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3745169443756969400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hyperdash Appear/DisapparFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17800,7 +18090,7 @@ GameObject:
   - component: {fileID: 4646008469160473521}
   - component: {fileID: 132634921945606467}
   - component: {fileID: 6396962666360674985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17862,7 +18152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4689158237390914524}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: base_rotator 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18217,7 +18507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1461267455015947926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_lower.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18234,7 +18524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7731971542680460072}
   - component: {fileID: 3267802466728576865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18273,7 +18563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1982726709898559626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18345,7 +18635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7695669344883568276}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: '_Annotation: New Annotation'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18606,7 +18896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7883946567187336072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icedagger_blast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18723,7 +19013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071856486781532206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fairy Seeker Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18839,7 +19129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3884440790295066763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: health flask'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18863,7 +19153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2514912603881483934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18879,7 +19169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2664999059437941565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_windup_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18960,7 +19250,7 @@ GameObject:
   - component: {fileID: 8524165783032540387}
   - component: {fileID: 4624019069940784323}
   - component: {fileID: 8679925081498440121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18976,7 +19266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3180629765030282413}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shotgun Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19010,7 +19300,7 @@ GameObject:
   - component: {fileID: 2460270330276905996}
   - component: {fileID: 5059486030060110694}
   - component: {fileID: 2900661493508401835}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19026,7 +19316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4202313101779089578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FX:lightning AOE impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19058,7 +19348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184461510076762513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_IK.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19092,7 +19382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3602967452340459676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19108,7 +19398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307650379753292965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: potion_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19139,7 +19429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4176406715818150310}
   - component: {fileID: 6878265185252817626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_beam_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19183,7 +19473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8342043057624953744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19652,7 +19942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9223011489933790082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hyperdash FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19766,7 +20056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7660642321914134604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: Piggybank Smash'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20081,7 +20371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4878586624688327166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20306,7 +20596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8662967642793989866}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ear.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20365,7 +20655,7 @@ GameObject:
   - component: {fileID: 2951829182397559095}
   - component: {fileID: 8279066968211017943}
   - component: {fileID: 3820813164111119462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stick_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20572,7 +20862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3435642736439532060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20588,7 +20878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162608603597059012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: projectile graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20689,7 +20979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4705289800549916714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: shards (physics)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20705,7 +20995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8613493729957230531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: stamina boost'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20771,7 +21061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3806393234762549311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20902,7 +21192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6898078732125922792}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20934,7 +21224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8712341387068654352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20980,7 +21270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8080611958049995470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book_page.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20996,7 +21286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3392257084546265666}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: electricity'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21065,7 +21355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9046553337603218745}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bow_muzzleflash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21139,7 +21429,7 @@ GameObject:
   - component: {fileID: 8625913742106495627}
   - component: {fileID: 1908301926773087684}
   - component: {fileID: 2961112151776424726}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21155,7 +21445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2754643200293940829}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21206,7 +21496,7 @@ GameObject:
   - component: {fileID: 8520664125468680932}
   - component: {fileID: 5831076452397380312}
   - component: {fileID: 4356199291002795795}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ring_thicker (spikes)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21329,7 +21619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8688914115044922729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21418,7 +21708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890852764626507118}
   - component: {fileID: 1516889099833877232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21434,7 +21724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4629754734615229744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_upper.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21488,7 +21778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 12312273870215378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Water Collisison
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21514,7 +21804,7 @@ GameObject:
   - component: {fileID: 395535463251495383}
   - component: {fileID: 4572207039235659824}
   - component: {fileID: 7459275987333116766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt particle 02 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21544,7 +21834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8564007302534771258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.7 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21560,7 +21850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3371904483261905651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx_end 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21713,7 +22003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6034983257936523280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: ball at origin'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22009,7 +22299,7 @@ GameObject:
   - component: {fileID: 2710124599592452582}
   - component: {fileID: 933849163873916541}
   - component: {fileID: 1750360566625105433}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cylinder 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22042,7 +22332,7 @@ GameObject:
   - component: {fileID: 6175375084273691976}
   - component: {fileID: 2708845240805150140}
   - component: {fileID: 1168678051635029543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: starburst mesh (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22058,7 +22348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3463855231533815407}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'SFX: prayer loop'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22118,7 +22408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 616609510729828590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.7 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22275,7 +22565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9018562558800660417}
   - component: {fileID: 6114766332892136245}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: techbow_turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22293,7 +22583,7 @@ GameObject:
   - component: {fileID: 7822791875848419772}
   - component: {fileID: 3191235747822501378}
   - component: {fileID: 8091998546327676605}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: thin circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22325,7 +22615,7 @@ GameObject:
   - component: {fileID: 6684704265116955975}
   - component: {fileID: 866456542260572031}
   - component: {fileID: 2744483397624854794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22382,7 +22672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6248219023772334753}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stick trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22525,7 +22815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779840470333728534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lightprobe Override Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22676,7 +22966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5278699715000153229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22733,7 +23023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8531863237676683051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.5 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22749,7 +23039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6858615662162170911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Spear Beam PS'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22817,7 +23107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6422691084084426299}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arrow spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23041,7 +23331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8600422361354006493}
   - component: {fileID: 6267903569820688306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fox cape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23057,7 +23347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1796031655057999850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.2 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23073,7 +23363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3258429766289786918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shotgun muzzle flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23161,7 +23451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2096980219705115790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23193,7 +23483,7 @@ GameObject:
   - component: {fileID: 7796851230292552794}
   - component: {fileID: 6871039360019654521}
   - component: {fileID: 8345483955503909644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23514,7 +23804,7 @@ GameObject:
   - component: {fileID: 4905947298835476884}
   - component: {fileID: 7395695823890680175}
   - component: {fileID: 3876980818353962130}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ragged flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23532,7 +23822,7 @@ GameObject:
   - component: {fileID: 3476167560948396152}
   - component: {fileID: 5254018374929302315}
   - component: {fileID: 6456454191088879162}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23548,7 +23838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5965196127848451543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rotator (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23566,7 +23856,7 @@ GameObject:
   - component: {fileID: 7944465324730822905}
   - component: {fileID: 4700055821439528498}
   - component: {fileID: 6037828476113890010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23596,7 +23886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4946919240791907839}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Techbow Bolt Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23700,7 +23990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5543551259637885434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.4 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23827,7 +24117,7 @@ GameObject:
   - component: {fileID: 2282959026853818105}
   - component: {fileID: 6252765379850733445}
   - component: {fileID: 1574772776229956399}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt torus 2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23867,7 +24157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 432038645832240492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_hit_fx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23992,7 +24282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4357436036454696219}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_beam_armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24090,7 +24380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4607409011896399953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Block player-aligned'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24167,7 +24457,7 @@ GameObject:
   - component: {fileID: 3593179549125954853}
   - component: {fileID: 6354818696298687250}
   - component: {fileID: 6714679208365294028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ring (2nd)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24183,7 +24473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8847060979404300808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_IK.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24259,7 +24549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7351350692671404008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: face cam 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24507,7 +24797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6238367552274114057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: balls'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24523,7 +24813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905331628747083046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy_hat_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24610,7 +24900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2895396824674432844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.4 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24659,7 +24949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5243425395474414991}
   - component: {fileID: 4882781893252635917}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_mesh 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24759,7 +25049,7 @@ GameObject:
   - component: {fileID: 5413832144832247800}
   - component: {fileID: 1501143497695316467}
   - component: {fileID: 5351129606133831204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shockwave ring mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24805,7 +25095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3743086788004270246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24996,7 +25286,7 @@ GameObject:
   - component: {fileID: 1595414287322017981}
   - component: {fileID: 6215316827587037506}
   - component: {fileID: 7537107126536351884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sphere flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25056,9 +25346,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 294337138191811631}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: _Fox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25249,7 +25539,7 @@ GameObject:
   - component: {fileID: 7911424045429186398}
   - component: {fileID: 5461548264770992886}
   - component: {fileID: 4630927534904025932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: potion_proxy (antidote)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25319,7 +25609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7015871852718235181}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: end effect 1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25352,7 +25642,7 @@ GameObject:
   - component: {fileID: 3877975385948350516}
   - component: {fileID: 5412074945629002205}
   - component: {fileID: 9081215129751705396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lantern arc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25382,7 +25672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7575653873982916535}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy_hat_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25406,7 +25696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079630940546377035}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: electricity 1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25438,7 +25728,7 @@ GameObject:
   - component: {fileID: 4638811748934414381}
   - component: {fileID: 1133532831850808508}
   - component: {fileID: 5214699932954277041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: charge_core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25514,7 +25804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6089044837046532128}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_lower.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25530,7 +25820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5715397890949037800}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS confetti 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25588,7 +25878,7 @@ GameObject:
   - component: {fileID: 3298698498084413759}
   - component: {fileID: 6438697014889880851}
   - component: {fileID: 4085143394302923410}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ring (spikes)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25696,7 +25986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3957977623511707806}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS lines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25712,7 +26002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4762572453034379136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZTargetting Reticule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25781,7 +26071,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312439879957386295}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'SFX: Fairy Seeker SFX'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25812,7 +26102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5089286996615460335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: sweat'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25884,7 +26174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8137667477152963583}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_lower.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25957,7 +26247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6532207561637380604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: impact fx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26106,7 +26396,7 @@ GameObject:
   - component: {fileID: 6290812953531826200}
   - component: {fileID: 6652363663398078996}
   - component: {fileID: 3207217309759484439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt torus 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26122,7 +26412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3822196060495857718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26387,7 +26677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8386496611788508449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: end effect'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27620,7 +27910,7 @@ GameObject:
   - component: {fileID: 8922272543196656544}
   - component: {fileID: 164420133328709233}
   - component: {fileID: 1544844143582691467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: graphic (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27652,7 +27942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6742061971429389292}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hair_tip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27697,7 +27987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8181279982953639878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_pole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27713,7 +28003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5880799603650034865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27758,7 +28048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8934597601624283630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy_hat_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27793,7 +28083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2495702978571480355}
   - component: {fileID: 7540731073865068270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27888,7 +28178,7 @@ GameObject:
   - component: {fileID: 8354659410248389215}
   - component: {fileID: 5381053189747566053}
   - component: {fileID: 4668193892096785697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: potion (hp)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27906,7 +28196,7 @@ GameObject:
   - component: {fileID: 5503448210595221473}
   - component: {fileID: 3994457524324016772}
   - component: {fileID: 8225749055657734417}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aura's Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27936,7 +28226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8879186108982197108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27993,7 +28283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2012355009567233627}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bow_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28011,7 +28301,7 @@ GameObject:
   - component: {fileID: 7050407090109115423}
   - component: {fileID: 5394536153570954771}
   - component: {fileID: 1611382728511705781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: star flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28106,7 +28396,7 @@ GameObject:
   - component: {fileID: 2702532371808230157}
   - component: {fileID: 1245829329977589919}
   - component: {fileID: 5139550643344557728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: orb_sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28122,7 +28412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4348415112315933242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_upper.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28152,7 +28442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6563207184351785191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'SFX: Hourglass Snapshot'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28256,7 +28546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1893924209798570930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS health spell (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28280,7 +28570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8140291176038033964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CreatureFrozenIceBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28296,7 +28586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720534097337579817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28332,7 +28622,7 @@ GameObject:
   - component: {fileID: 8766023713850483166}
   - component: {fileID: 6422233207546630673}
   - component: {fileID: 3299717228746510011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fox piggybank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28348,7 +28638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5884511975600377239}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'HT: lantern'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28372,7 +28662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4443467686652408424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28388,7 +28678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7653741623548293257}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Forcewand trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28404,7 +28694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2178781547118525708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mouth_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28435,7 +28725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7889265379743027450}
   - component: {fileID: 3451213297357518348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28453,7 +28743,7 @@ GameObject:
   - component: {fileID: 5087905321896854958}
   - component: {fileID: 7405169485358546429}
   - component: {fileID: 6099467114187466248}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: orb_tentacles_source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28541,7 +28831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6309729255072762470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.3 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28557,7 +28847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3059529033777945761}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book_page.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28655,7 +28945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3125261407377056872}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: sparks 1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30164,7 +30454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 13, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4563423796667492113
@@ -31099,7 +31389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 827801063579428820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31115,7 +31405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9124634494075596863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: freefloating_doll_tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31281,7 +31571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7009230372000081761}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cape_upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31576,7 +31866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1401806594755688785}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cape_lower_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31592,7 +31882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577660558872918337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: start_bone_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31622,7 +31912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774818763767926267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand orb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31654,7 +31944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2454374445819288603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_pole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31870,7 +32160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238881529503274830}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shotgun_projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31886,7 +32176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5805760886394799778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hair_tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32045,7 +32335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2944152553588461317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy_hat_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32134,7 +32424,7 @@ GameObject:
   - component: {fileID: 74029700517601093}
   - component: {fileID: 2091633371004977579}
   - component: {fileID: 8515269008737568773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ring_thicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32239,7 +32529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4334956947284624387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_windup (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32422,7 +32712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4987903615206709332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wandbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32782,7 +33072,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
-  m_Intensity: 25
+  m_Intensity: 15
   m_Range: 6
   m_SpotAngle: 132.30432
   m_InnerSpotAngle: 95.73924
@@ -32819,7 +33109,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 17152
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
@@ -32844,7 +33134,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
-  m_Intensity: 25
+  m_Intensity: 15
   m_Range: 6
   m_SpotAngle: 132.30432
   m_InnerSpotAngle: 95.73924
@@ -32881,7 +33171,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 17152
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
@@ -32968,7 +33258,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
-  m_Intensity: 25
+  m_Intensity: 15
   m_Range: 6
   m_SpotAngle: 132.30432
   m_InnerSpotAngle: 95.73924
@@ -33005,7 +33295,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 17152
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
@@ -33027,7 +33317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4652078865740719624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_windup (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33071,7 +33361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5253378152140611866}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cape_middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33129,7 +33419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590263087687886990}
   - component: {fileID: 3959568460465659843}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_mesh 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33186,7 +33476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1677681507991138056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_windup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33202,7 +33492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5931604233174724700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: shards'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33218,7 +33508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6541180745418099868}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'HT: shotgun'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33236,7 +33526,7 @@ GameObject:
   - component: {fileID: 899250836222236590}
   - component: {fileID: 3150091724698109611}
   - component: {fileID: 3056024055592476457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33255,9 +33545,10 @@ GameObject:
   - component: {fileID: 5159832285249155347}
   - component: {fileID: 5159832285249155348}
   - component: {fileID: 5159832285249155349}
+  - component: {fileID: 5159832285249155350}
   m_Layer: 0
   m_Name: beefboy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33321,6 +33612,22 @@ CapsuleCollider:
   m_Height: 0.07965104
   m_Direction: 1
   m_Center: {x: -1.4968665e-11, y: 0.03857755, z: 0.0029727006}
+--- !u!54 &5159832285249155350
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159832285249155346}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!4 &5178312377874235459
 Transform:
   m_ObjectHideFlags: 0
@@ -33376,7 +33683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888469353869357719}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book_page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33451,7 +33758,7 @@ GameObject:
   - component: {fileID: 6496520072244446307}
   - component: {fileID: 5872579045651372946}
   - component: {fileID: 1665510377846329503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: radial_uv_ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33641,7 +33948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1402614512811876241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: freefloating_doll_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33659,7 +33966,7 @@ GameObject:
   - component: {fileID: 5178312377874235459}
   - component: {fileID: 8149325346779205710}
   - component: {fileID: 8950529929657887449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: orb_tentacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33675,7 +33982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130154321573589718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33691,7 +33998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2933971322369333346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Block (new)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33808,7 +34115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6785344825515889232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wandbow fire effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33898,7 +34205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6045092347450073555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sparks 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33914,7 +34221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 944659377864714648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_lower.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33930,7 +34237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2401593257537857781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_IK.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34003,7 +34310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3790595691720377199}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34037,7 +34344,7 @@ GameObject:
   - component: {fileID: 112545502049209094}
   - component: {fileID: 9192368363947361944}
   - component: {fileID: 7998270545132167634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: trinketCoin_lowPoly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34117,7 +34424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2246720690747965461}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tail_tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34174,7 +34481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2470137105969705214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34214,7 +34521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5844478727224510660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hyperdash Termination FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34230,7 +34537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6679342295965118014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34275,7 +34582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7941962899807906296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ear.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34350,7 +34657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5741895035036273543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34366,7 +34673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066637757898937571}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34382,7 +34689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4072389608252382299}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Death Camera Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34584,7 +34891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4521495324440706097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34655,7 +34962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3113661945260926997}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: face cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34679,7 +34986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 864111648565559555}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'HT: hyperdash'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34902,7 +35209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5027705583422103434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34985,7 +35292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5476344516327755814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35058,7 +35365,7 @@ GameObject:
   - component: {fileID: 6534850116536458124}
   - component: {fileID: 6361817809045141247}
   - component: {fileID: 2759755184813200593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cylinder 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35163,7 +35470,7 @@ GameObject:
   - component: {fileID: 8307493243491958554}
   - component: {fileID: 8690489641352302068}
   - component: {fileID: 2231464191071240076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_partway 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35244,7 +35551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4227176074862681812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: sparks short'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35285,7 +35592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4597532165435212958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35301,7 +35608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 440666349850543682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: iframe dust (more)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35597,7 +35904,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6707747218575126650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZTargetting Reticule Preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35676,7 +35983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6850749381171812994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: techbolt impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35723,7 +36030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428614380814582199}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35923,7 +36230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6090747704269811213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35967,7 +36274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6056648660982983494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FX:lightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36095,7 +36402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5497843914032886580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.6 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36153,7 +36460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5566954724132695926}
   - component: {fileID: 5853829655426578895}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36285,7 +36592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3746875497933293700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: poison'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36436,7 +36743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5586937577961698885}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: antidote'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36561,7 +36868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2481148045215044585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36585,7 +36892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724455852653850076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Cross AOE particles'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36759,7 +37066,7 @@ GameObject:
   - component: {fileID: 2354977497906158445}
   - component: {fileID: 3793451389270871875}
   - component: {fileID: 2019853684823242888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt torus 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36775,7 +37082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 344083848574316374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36813,7 +37120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1772064869800753890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ear.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37047,7 +37354,7 @@ GameObject:
   - component: {fileID: 2563324221498424726}
   - component: {fileID: 6022267345843036268}
   - component: {fileID: 6272033478747148698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: orb_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37063,7 +37370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4907753126862137749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.5 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37115,7 +37422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5315869381242582616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37131,7 +37438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1666337724171953212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37232,7 +37539,7 @@ GameObject:
   - component: {fileID: 5400220653306543740}
   - component: {fileID: 5003781846491122794}
   - component: {fileID: 6494166024410678923}
-  m_Layer: 17
+  m_Layer: 9
   m_Name: shield_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37320,7 +37627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8764136707982350587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37379,7 +37686,7 @@ GameObject:
   - component: {fileID: 7933738054968908413}
   - component: {fileID: 5683591293160458436}
   - component: {fileID: 5598211203460199010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37395,7 +37702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3550913269884030659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lantern Light max extension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37486,7 +37793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1507979287337404381}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.6 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37547,7 +37854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 892727402842995277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37637,7 +37944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9208591155089016277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hitbox_stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37704,7 +38011,7 @@ GameObject:
   - component: {fileID: 2571449053938320310}
   - component: {fileID: 8858440737341969062}
   - component: {fileID: 1764160494377261159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37902,7 +38209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2419956339179937485}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cape_lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37961,7 +38268,7 @@ GameObject:
   - component: {fileID: 1053126429360634231}
   - component: {fileID: 2869769073913067722}
   - component: {fileID: 974958606667972173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: charge_core 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37977,7 +38284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 511016793622605392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38049,7 +38356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6706970070201832692}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hitbox_sword1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38121,7 +38428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3645337666844415377}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Spear Charge PS'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38155,7 +38462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8025181876717640182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: frond.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38171,7 +38478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7937617305576920212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: book_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38279,7 +38586,7 @@ GameObject:
   - component: {fileID: 4620135577437214834}
   - component: {fileID: 1049959707526419593}
   - component: {fileID: 1656105129918175798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt particle 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38325,7 +38632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149431095902937345}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_upper.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38373,7 +38680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4478782464833433246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: end_bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38389,7 +38696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9059395280826575890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_lower.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38551,7 +38858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4020826282238556949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: trail graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38589,7 +38896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9146901783138895993}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38775,7 +39082,7 @@ GameObject:
   - component: {fileID: 8877334059016451134}
   - component: {fileID: 1277700708212633784}
   - component: {fileID: 7464894647272485959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38791,7 +39098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1344452634841659757}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZTargets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38807,7 +39114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726357874742511880}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tail_tip_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38831,7 +39138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5271703060755975725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icedagger Hit Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38847,7 +39154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2255638678003038197}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword1 trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38865,7 +39172,7 @@ GameObject:
   - component: {fileID: 1059768519943753882}
   - component: {fileID: 5869228221228030961}
   - component: {fileID: 712239570328452908}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dash fox 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38889,7 +39196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8582302382973979738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: damage boost'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38905,7 +39212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4196580681621415670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: floppy_hat_4_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38921,7 +39228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7748608613363178767}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39019,7 +39326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8527876105849689467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: eyes_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39103,7 +39410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5909216248875587486}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_armature 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39153,7 +39460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8234199365725392275}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: freefloating
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39169,7 +39476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6902847446679388651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_pole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39536,7 +39843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8579599374375295260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_upper.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39552,7 +39859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5278014642125523426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: tether tip'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39698,7 +40005,7 @@ GameObject:
   - component: {fileID: 460250715065895194}
   - component: {fileID: 8752465347782347078}
   - component: {fileID: 4565947803776181461}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wandbow 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39844,7 +40151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2181759636113423704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39880,7 +40187,7 @@ GameObject:
   - component: {fileID: 5027631494013826358}
   - component: {fileID: 5395998718589045333}
   - component: {fileID: 2253203211750421015}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: potion (mp)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39940,7 +40247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425179667547951797}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wandbow_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39956,7 +40263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1978832379768684242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS lines 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40040,6 +40347,7 @@ GameObject:
   - component: {fileID: 7852035937569377367}
   - component: {fileID: 7606050607998514121}
   - component: {fileID: 7606050607998514122}
+  - component: {fileID: 7606050607998514123}
   m_Layer: 0
   m_Name: shield 1
   m_TagString: shield
@@ -40072,6 +40380,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8578572c15318408d9362d57c24735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &7606050607998514123
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606050607998514120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &7611218454090667592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40165,7 +40489,7 @@ GameObject:
   - component: {fileID: 3067243631133637888}
   - component: {fileID: 3466198815381997743}
   - component: {fileID: 4495872594900498528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40245,7 +40569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2333058533749539585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail (1) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40281,7 +40605,7 @@ GameObject:
   - component: {fileID: 8827927730633444696}
   - component: {fileID: 2950649521262373161}
   - component: {fileID: 4204627717085924327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40325,7 +40649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7403510560737902482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Light: lantern arc'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40359,7 +40683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347345910128529398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: cheap icebolt'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40405,7 +40729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5849864179283533144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40421,7 +40745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8713287517723385584}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tail_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40451,7 +40775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7648287468221855980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_pole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40509,7 +40833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6425503097508797217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40527,6 +40851,7 @@ GameObject:
   - component: {fileID: 5185979321942254614}
   - component: {fileID: 2718684963239554088}
   - component: {fileID: 5055293224035482762}
+  - component: {fileID: 7791446991281106049}
   m_Layer: 0
   m_Name: Combined_Mesh_(root:_scene)_31_1
   m_TagString: Untagged
@@ -40534,6 +40859,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7791446991281106049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7791446991281106048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1859.6978, y: 2929.9614, z: 1732.6013}
+  m_Center: {x: 120.80209, y: 1489.0413, z: 231.16833}
 --- !u!4 &7796851230292552794
 Transform:
   m_ObjectHideFlags: 0
@@ -40606,7 +40944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1842141127515412463}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icedagger_fx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40624,7 +40962,7 @@ GameObject:
   - component: {fileID: 8980013631924462825}
   - component: {fileID: 3994471265044226861}
   - component: {fileID: 2034335036534319691}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: therealest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40779,7 +41117,7 @@ GameObject:
   - component: {fileID: 5962666924809676217}
   - component: {fileID: 3957215626445392596}
   - component: {fileID: 1091838888899009154}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: starburst mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40878,7 +41216,7 @@ GameObject:
   - component: {fileID: 2439414443827851337}
   - component: {fileID: 1666782195685815611}
   - component: {fileID: 3231675633758731591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dash fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40894,7 +41232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 311245316484254606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_pole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41028,7 +41366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5246267555885612483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx_end 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41044,7 +41382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6676257902139258655}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wand_tendril.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41060,7 +41398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473352198939826573}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41372,7 +41710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 750039905455139745}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: sparks'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41432,7 +41770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822557330241554920}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leg_IK.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41448,7 +41786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8250436798171915560}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41505,7 +41843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6943311636695228392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8_end 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41611,7 +41949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4837156294817135188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8_end 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41739,7 +42077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2502384971428797886}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS confetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41954,7 +42292,7 @@ GameObject:
   - component: {fileID: 7574369679910800067}
   - component: {fileID: 1414703122540711222}
   - component: {fileID: 5006153397058386515}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: key twist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42047,7 +42385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 974750651721527565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ear.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42290,7 +42628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5046411424950742780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tetherwand_beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42383,7 +42721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6503079578562581970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: slashfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42399,7 +42737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6349217571992850105}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'FX: Block'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42415,7 +42753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247480517800283729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dagger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42433,7 +42771,7 @@ GameObject:
   - component: {fileID: 8578133960800075334}
   - component: {fileID: 2824289992911370947}
   - component: {fileID: 2531037171889324870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dagger mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42451,7 +42789,7 @@ GameObject:
   - component: {fileID: 1624675479067066855}
   - component: {fileID: 5925143840603742469}
   - component: {fileID: 126659183257183930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icechunk_spike (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42489,7 +42827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4655801932725348760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'CZ: zoomin'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42607,7 +42945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3657648700344815146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PS health spell (1) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42623,7 +42961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781971641951988758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'HT: Cross AOE hittrigger'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42936,7 +43274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456840486271385279}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arm_pole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42952,7 +43290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6984765427390356061}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fairyseeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43068,7 +43406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6024444845540378720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: base_rotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43128,7 +43466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7016047653841009060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: freefloating_doll_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43158,7 +43496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8791798042715291845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: lantern arc'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43253,7 +43591,7 @@ GameObject:
   - component: {fileID: 3632801723815387137}
   - component: {fileID: 1211105442781488911}
   - component: {fileID: 8012533293794122015}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dashbolt_kickoff_1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43285,7 +43623,7 @@ GameObject:
   - component: {fileID: 2998746608544236876}
   - component: {fileID: 3719611361854596525}
   - component: {fileID: 8152348708414326225}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43341,7 +43679,7 @@ GameObject:
   - component: {fileID: 6615888043138929736}
   - component: {fileID: 7765050022440986585}
   - component: {fileID: 9084968359357757670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shotgun_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43431,7 +43769,7 @@ GameObject:
   - component: {fileID: 2556469788155082401}
   - component: {fileID: 8559639442525007639}
   - component: {fileID: 3177506365635183779}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bow_proxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43462,7 +43800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4738104014534171228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Light: Lantern'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43537,7 +43875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5071902595208993294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera Position 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43585,7 +43923,7 @@ GameObject:
   - component: {fileID: 6382705203586293688}
   - component: {fileID: 687169276926511046}
   - component: {fileID: 4766354482040024108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: icedagger_shockwave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43623,7 +43961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6607654324660619688}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lantern Light min extension
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43694,7 +44032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7452646569217239737}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43710,7 +44048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8378531158375687591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: iframe dust'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43728,7 +44066,7 @@ GameObject:
   - component: {fileID: 3110326516936494626}
   - component: {fileID: 5663108688546428213}
   - component: {fileID: 1499502678322200978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bolt torus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43744,7 +44082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3414511017580305227}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hitbox_sword1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43902,7 +44240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9119210961388309505}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43941,7 +44279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1107409015347807351}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail (1) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43965,7 +44303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8079619703193871629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle.8 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44099,7 +44437,7 @@ GameObject:
   - component: {fileID: 5582687722617851}
   - component: {fileID: 1103601407779149344}
   - component: {fileID: 7887279479142377185}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44139,7 +44477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7447836028471168314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: start_bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44199,7 +44537,7 @@ GameObject:
   - component: {fileID: 3415220741728534418}
   - component: {fileID: 5389326428028172036}
   - component: {fileID: 3856345203937159125}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44233,7 +44571,7 @@ GameObject:
   - component: {fileID: 1943772623156636354}
   - component: {fileID: 8451386151441757157}
   - component: {fileID: 9045664585778760319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: scavenger_mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44249,7 +44587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6228501554789564136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tentacle_armature 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44353,7 +44691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8221833372965803980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'PS: triangles'
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -38,7 +38,7 @@ public class Potion : MonoBehaviour
                     Slot3.SetActive(true);
                     break;
                 default:
-                    break;
+                    return;
             }
             Fox_controller.instance.Potion.Enqueue(this.gameObject);
             Fox_controller.instance.PotionCount++;
