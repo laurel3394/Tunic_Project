@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Living : MonoBehaviour
 {
-    [SerializeField] protected float currentHp;  //확인용
+    public int MonsterDamage;
+    [SerializeField] public float currentHp;  //확인용
     [SerializeField] protected float currentSp;
 
     [Header("기본정보")]

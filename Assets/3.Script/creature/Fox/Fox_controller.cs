@@ -9,6 +9,7 @@ public class Fox_controller : Living
     [Header("플레이어 정보")]
     [SerializeField] private GameObject Sword;
     [SerializeField] private GameObject Wand;
+    [SerializeField] private GameObject HandPotion;
     [SerializeField] private GameObject Beam;
     [SerializeField] private float Fox_Rot_Speed;
     [SerializeField] private float Fox_SPrecovery_Speed;
@@ -128,6 +129,7 @@ public class Fox_controller : Living
             Damage = SwordDamage;
             Sword.SetActive(true);
             Wand.SetActive(false);
+            HandPotion.SetActive(false);
             Foxmove = false;
             AttackTime = Time.time;
             Combocount++;
@@ -145,14 +147,27 @@ public class Fox_controller : Living
             FoxSp(45);
             Wand.SetActive(true);
             Sword.SetActive(false);
+            HandPotion.SetActive(false);
             Foxmove = false;
             ani.SetTrigger("WandAttack");
-            Invoke("FoxmoveControll", 0.5f);
+            Invoke("FoxmoveControll", 0.2f);
             Combocount = 0;
             return3();
             Invoke("FoxAttackControll", 2f);
 
         }
+        if (Input.GetKeyDown(KeyCode.L) && FoxAttack && !isDead && !FoxExhausted)
+        {
+            FoxAttack = false;
+            FoxSp(20);
+            Foxmove = false;
+            ani.SetTrigger("PlayerParry");
+            Invoke("FoxmoveControll", 1.2f);
+            Invoke("FoxAttackControll", 1.2f);
+
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Space) && Foxmove && !isDead)
         {
             if (currentSp < Sp_Roll)
@@ -189,7 +204,16 @@ public class Fox_controller : Living
                     break;
             }
             Potion.Dequeue();
+            FoxAttack = false;
+            Foxmove = false;
+            HandPotion.SetActive(true);
+            Sword.SetActive(false);
+            Wand.SetActive(false);
+            ani.SetTrigger("PlayerEat");
+            Invoke("FoxmoveControll", 1.55f);
+            Invoke("FoxAttackControll", 1.55f);
             currentHp += 20f;
+            HPslider.value = currentHp;
             if (currentHp >= StartHp)
             {
                 currentHp = StartHp;
@@ -324,7 +348,7 @@ public class Fox_controller : Living
             ani.SetBool("Attack2", false);
             StartCoroutine(PlayerHit());
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
-            OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+            OnDamage(other.GetComponentInParent<Living>().MonsterDamage, DieTime);
             HPslider.value = currentHp;
             SPslider.value = currentSp;
         }
@@ -339,7 +363,19 @@ public class Fox_controller : Living
             ani.SetBool("Attack2", false);
             StartCoroutine(PlayerHardHIt());
             CameraControll.instance.OnShakeCamera(0.1f, 2.5f);
-            OnDamage(Scavenger_Boss.MonsterDamage, DieTime);
+            OnDamage(other.GetComponentInParent<Living>().MonsterDamage, DieTime);
+            HPslider.value = currentHp;
+            SPslider.value = currentSp;
+        }
+        if (other.CompareTag("Boss_Bullet") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Combocount = 0;
+            ani.SetBool("Attack", false);
+            ani.SetBool("Attack1", false);
+            ani.SetBool("Attack2", false);
+            StartCoroutine(PlayerHit());
+            CameraControll.instance.OnShakeCamera(0.1f, 1f);
+            OnDamage(20, DieTime);
             HPslider.value = currentHp;
             SPslider.value = currentSp;
         }

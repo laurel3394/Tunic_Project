@@ -5,7 +5,8 @@ using UnityEngine;
 public class Potal : MonoBehaviour
 {
     private Animator ani;
-
+    [SerializeField] private GameObject Enemy1;
+    [SerializeField] private GameObject Enemy2;
     private void Start()
     {
         ani = GetComponent<Animator>();
@@ -17,7 +18,7 @@ public class Potal : MonoBehaviour
         while (true)
         {
             float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
-            if (distance <= 10f)
+            if (distance <= 10f && Enemy1 == null && Enemy2 == null)
             {
                 ani.SetTrigger("Open");
                 break;

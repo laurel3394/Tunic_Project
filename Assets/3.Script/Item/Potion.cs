@@ -18,6 +18,7 @@ public class Potion : MonoBehaviour
         if (distance <=2f)
         {
             Vector3 dir = Fox_controller.instance.gameObject.transform.position - this.transform.position;
+            dir.y = 0;
             this.transform.position += dir * 3 * Time.deltaTime;
         }
     }
@@ -31,10 +32,10 @@ public class Potion : MonoBehaviour
                     Slot1.SetActive(true);
                     break;
                 case 2:
-                    Slot1.SetActive(true);
+                    Slot2.SetActive(true);
                     break;
                 case 3:
-                    Slot1.SetActive(true);
+                    Slot3.SetActive(true);
                     break;
                 default:
                     break;

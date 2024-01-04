@@ -10,6 +10,8 @@ TagManager:
   - Boss_Hard_Attack
   - Watter
   - Potal
+  - shield
+  - Boss_Bullet
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - PlayerAttack
   - EnemyAttack
   - EnemyHardAttack
-  - 
+  - PlayerParry
   - 
   - 
   - 

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Scavenger_Boss : Living
 {
-    public static int MonsterDamage;
     [SerializeField] public int checkDamage;
     [SerializeField] private bool BossMoveControll = true;
     [SerializeField] private bool BossMeleeAttack;
@@ -331,7 +330,7 @@ public class Scavenger_Boss : Living
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
-            CameraControll.instance.OnShakeCamera(0.1f, 1f);
+            CameraControll.instance.OnShakeCamera(0.05f, 1f);
             StartCoroutine(Boss_Hit());
             OnDamage(Fox_controller.instance.Damage, DieTime);
             Boss_Hpslider.value = currentHp;
