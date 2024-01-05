@@ -14,7 +14,6 @@ public class OnoffButton : MonoBehaviour
         onoff = true;
         ON.SetActive(false);
         OFF.SetActive(true);
-        Debug.Log(onoff);
 
     }
     public void Off_Button()
@@ -22,6 +21,5 @@ public class OnoffButton : MonoBehaviour
         onoff = false;
         ON.SetActive(true);
         OFF.SetActive(false);
-        Debug.Log(onoff);
     }
 }

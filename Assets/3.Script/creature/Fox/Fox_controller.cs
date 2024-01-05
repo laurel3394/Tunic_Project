@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Fox_controller : Living
@@ -17,7 +18,7 @@ public class Fox_controller : Living
     [SerializeField] private int SwordDamage;
     [SerializeField] private int WandDamage;
     [SerializeField] private int Sp_Roll;
-
+    private int DeadCount=0;
     [Header("머티리얼")]
     [SerializeField] private GameObject FoxBody;
     [SerializeField] private SkinnedMeshRenderer skinned;
@@ -340,6 +341,15 @@ public class Fox_controller : Living
     }
     private void OnTriggerEnter(Collider other)   //맞는 애니메이션 적용
     {
+        if (currentHp <= 0 && DeadCount == 0)
+        {
+            DeadCount++;
+            PlayerRollMask();
+            ani.SetTrigger("Fox_Die");
+            PlayerInfo.instance.Fade(0.3f);
+            Invoke("DieFade", 3.6f);
+            return;
+        }
         if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             Combocount = 0;
@@ -379,9 +389,14 @@ public class Fox_controller : Living
             HPslider.value = currentHp;
             SPslider.value = currentSp;
         }
-        if (currentHp<=0)
-        {
-            ani.SetTrigger("Fox_Die");
-        }
     }
+    private void DieFade()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit(); // 어플리케이션 종료
+#endif
+    }
+
 }

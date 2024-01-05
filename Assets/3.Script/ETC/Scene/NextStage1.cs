@@ -12,12 +12,13 @@ public class NextStage1 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("씬 넘기기 추가");
-            SceneManager.LoadScene("Ending");
-            Fox_controller.instance.transform.position = new Vector3(-0.76f,0, -0.94f);
-            Light1.SetActive(true);
-            Light2.SetActive(true);
-            Light3.SetActive(true);
+            PlayerInfo.instance.Fade(1f);
+            StartCoroutine(NextGate());
         }
+    }
+    private IEnumerator NextGate()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Ending");
     }
 }

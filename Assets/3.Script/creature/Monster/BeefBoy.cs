@@ -158,11 +158,11 @@ public class BeefBoy : Living
         yield return new WaitForSeconds(0.86f);
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
-            CameraControll.instance.OnShakeCamera(0.01f, 1f);
+            CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(Fox_controller.instance.Damage - Shield_Damage, DieTime);
             if (currentHp <= 0)
             {
