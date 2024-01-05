@@ -29,9 +29,12 @@ public class CameraControll : MonoBehaviour
 
     public void OnShakeCamera(float shakeTime = 1.0f,float shakeIntensity = 0.1f)
     {
-        this.shakeTime = shakeTime;
-        this.shakeIntensity = shakeIntensity;
-        StartCoroutine(ShakeByRotation());
+        if (OnoffButton.onoff)
+        {
+            this.shakeTime = shakeTime;
+            this.shakeIntensity = shakeIntensity;
+            StartCoroutine(ShakeByRotation());
+        }
     }
 
     private IEnumerator ShakeByRotation()

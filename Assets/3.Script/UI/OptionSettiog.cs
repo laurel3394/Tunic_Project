@@ -18,4 +18,11 @@ public class OptionSettiog : MonoBehaviour
             Exit.SetActive(true);
         }       
     }
+    public void Escape()
+    {
+        Settingpage.SetActive(false);
+        start.SetActive(true);
+        setting.SetActive(true);
+        Exit.SetActive(true);
+    }
 }
