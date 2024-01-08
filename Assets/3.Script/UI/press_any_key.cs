@@ -28,16 +28,8 @@ public class press_any_key : MonoBehaviour
         while (true)
         {
             num += Time.deltaTime*num2;  //러프 방법
-            if (num >= 1)
-            {
-                num2 = -1;
-                num = 1;
-            }
-            else if (num <= 0)
-            {
-                num2 = 1;
-                num = 0;
-            }
+            if (1f <= num || 0f >= num)
+                num2 *= -1f;
             float blink = Mathf.Lerp(1f, 0f, num);
             text.color = new Color(1f, 1f, 1f, blink);
             yield return null;
