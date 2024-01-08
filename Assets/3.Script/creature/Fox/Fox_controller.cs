@@ -49,7 +49,6 @@ public class Fox_controller : Living
     public Queue<GameObject> Potion = new Queue<GameObject>();
     [SerializeField] public int PotionCount = 0;
 
-
     private void Awake()
     {
         Onenable();
@@ -100,7 +99,6 @@ public class Fox_controller : Living
         v = Input.GetAxis("Vertical");
 
         Vector3 dir = new Vector3(h, 0, v);
-
         if (!(h == 0 && v == 0) && Foxmove && !isDead)
         {
             // 이동
@@ -108,10 +106,15 @@ public class Fox_controller : Living
             // 회전
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * Fox_Rot_Speed);
             ani.SetBool("PlayerWalk", true);
+            if (Foxmove&& !AudioManager.instance.sfxPlayer[(int)AudioManager.Sfx.FoxWalk].isPlaying)
+            {
+                AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxWalk);
+            }
         }
         else
         {
             ani.SetBool("PlayerWalk", false);
+            AudioManager.instance.StopPlay(AudioManager.Sfx.FoxWalk);
         }
 
     }
@@ -343,6 +346,7 @@ public class Fox_controller : Living
     {
         if (currentHp <= 0 && DeadCount == 0)
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxDie);
             DeadCount++;
             PlayerRollMask();
             ani.SetTrigger("Fox_Die");
@@ -352,6 +356,7 @@ public class Fox_controller : Living
         }
         if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);
@@ -364,6 +369,7 @@ public class Fox_controller : Living
         }
         if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Vector3 dir = other.transform.position - this.transform.position;
             dir.y = 0;
             this.transform.forward = dir.normalized;
@@ -379,6 +385,7 @@ public class Fox_controller : Living
         }
         if (other.CompareTag("Boss_Bullet") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);

@@ -10,6 +10,7 @@ public class Option_Button : MonoBehaviour
     [SerializeField] private GameObject Exit;
     public void Option_Click()
     {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         Settingpage.SetActive(true);
         start.SetActive(false);
         setting.SetActive(false);

@@ -12,6 +12,7 @@ public class OptionSettiog : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
             Settingpage.SetActive(false);
             start.SetActive(true);
             setting.SetActive(true);
@@ -20,6 +21,7 @@ public class OptionSettiog : MonoBehaviour
     }
     public void Escape()
     {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         Settingpage.SetActive(false);
         start.SetActive(true);
         setting.SetActive(true);

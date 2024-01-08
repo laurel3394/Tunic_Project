@@ -11,6 +11,7 @@ public class IngameOption : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && SetAct)
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
             SetAct = false;
             Settingpage.SetActive(false);
             Time.timeScale = 1f;
@@ -18,6 +19,7 @@ public class IngameOption : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Escape) && !SetAct)
         {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
             SetAct = true;
             Settingpage.SetActive(true);
             Time.timeScale = 0f;

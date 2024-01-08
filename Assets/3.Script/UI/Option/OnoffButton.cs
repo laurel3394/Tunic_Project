@@ -11,6 +11,7 @@ public class OnoffButton : MonoBehaviour
 
     public void On_Button()
     {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         onoff = true;
         ON.SetActive(false);
         OFF.SetActive(true);
@@ -18,6 +19,7 @@ public class OnoffButton : MonoBehaviour
     }
     public void Off_Button()
     {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         onoff = false;
         ON.SetActive(true);
         OFF.SetActive(false);

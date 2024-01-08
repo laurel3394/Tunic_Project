@@ -34,6 +34,7 @@ public class PlayerInfo : MonoBehaviour
 
     public IEnumerator FadeInOut(float num)
     {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         Panel.gameObject.SetActive(true);
         time = 0f;
         Color alpha = Panel.color;

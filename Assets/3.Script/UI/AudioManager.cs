@@ -9,11 +9,16 @@ public class AudioManager : MonoBehaviour
     [Header("BGM")]
     public AudioClip[] bgmClip;
     public float bgmVolume;
-    AudioSource[] bgmPlayer;
+    public AudioSource[] bgmPlayer;
     [Header("SFX")]
     public AudioClip[] sfxClip;
     public float sfxVolume;
-    AudioSource[] sfxPlayer;
+    public AudioSource[] sfxPlayer;
+
+    private int channalindex;
+    private int BGMindex;
+
+
     public enum Bgm
     {
         Lobby,
@@ -23,7 +28,13 @@ public class AudioManager : MonoBehaviour
     }
     public enum Sfx
     {
-
+        FoxHit,
+        FoxSwing1,
+        FoxSwing2,
+        FoxSwing3,
+        FoxWalk,
+        FoxDie,
+        Button
     }
 
 
@@ -34,6 +45,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Init();
+        PlayBGM(Bgm.Lobby);
     }
     //public void SFXPlay()
     //{
@@ -41,7 +53,11 @@ public class AudioManager : MonoBehaviour
     //    AudioSource audioSource = sfx.AddComponent<AudioSource>()
     //}
 
-
+    private void Update()
+    {
+        bgmPlayer[BGMindex].volume = bgmVolume;
+        sfxPlayer[channalindex].volume = sfxVolume;
+    }
 
 
 
@@ -73,11 +89,47 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayBGM(Bgm bgm)
+    {
+        for (int i = 0; i < bgmPlayer.Length; i++)
+        {
+            int loopIndex = (i + BGMindex) % bgmPlayer.Length;
 
+            if (bgmPlayer[loopIndex].isPlaying)
+            {
+                continue;
+            }
+            BGMindex = loopIndex;
+            bgmPlayer[loopIndex].clip = bgmClip[(int)bgm];
+            bgmPlayer[loopIndex].Play();
+            break;
+        }
+    }
+    public void PlaySFX(Sfx sfx)
+    {
+        for (int i = 0; i < sfxPlayer.Length; i++)
+        {
+            int loopIndex = (i + channalindex) % sfxPlayer.Length;
 
+            if (sfxPlayer[loopIndex].isPlaying)
+            {
+                continue;
+            }
+            channalindex = loopIndex;
+            sfxPlayer[loopIndex].clip = sfxClip[(int)sfx];
+            sfxPlayer[loopIndex].Play();
+            break;
+        }
+    }
 
-
-
+    public void StopPlay(Bgm bgm)
+    {
+        bgmPlayer[(int)bgm].Stop();
+    }
+    public void StopPlay(Sfx sfx)
+    {
+        sfxPlayer[(int)sfx].Stop();
+    }
 
 
 
