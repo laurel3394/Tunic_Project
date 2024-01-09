@@ -12753,8 +12753,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.028375763, y: 0.0077115237, z: 0.06762914}
-  m_Center: {x: -0.000000016545782, y: -0.0012705291, z: -0.0007912499}
+  m_Size: {x: 0.062926754, y: 0.017701456, z: 0.06762914}
+  m_Center: {x: -0.000000015254335, y: -0.008079226, z: -0.0007912504}
 --- !u!23 &1582403884
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30198,7 +30198,7 @@ GameObject:
   - component: {fileID: 5503448210595221473}
   - component: {fileID: 3994457524324016772}
   - component: {fileID: 8225749055657734417}
-  m_Layer: 9
+  m_Layer: 17
   m_Name: Aura's Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38817,9 +38817,9 @@ GameObject:
   - component: {fileID: 5400220653306543740}
   - component: {fileID: 5003781846491122794}
   - component: {fileID: 6494166024410678923}
-  m_Layer: 9
+  m_Layer: 17
   m_Name: shield_proxy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41512,8 +41512,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.028375763, y: 0.0077115237, z: 0.06762914}
-  m_Center: {x: -0.000000016545782, y: -0.0012705291, z: -0.0007912499}
+  m_Size: {x: 0.06292676, y: 0.021322487, z: 0.06762914}
+  m_Center: {x: 0.003197721, y: -0.008075991, z: -0.00079125416}
 --- !u!114 &7606050607998514122
 MonoBehaviour:
   m_ObjectHideFlags: 0
