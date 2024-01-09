@@ -153,6 +153,7 @@ public class Fox_controller : Living
             Sword.SetActive(false);
             HandPotion.SetActive(false);
             Foxmove = false;
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.Fox_Beam);
             ani.SetTrigger("WandAttack");
             Invoke("FoxmoveControll", 0.2f);
             Combocount = 0;

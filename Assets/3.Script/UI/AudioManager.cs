@@ -46,6 +46,7 @@ public class AudioManager : MonoBehaviour
         Potal_Open02,
         GetPotion,
         UsePotion,
+        Fox_Beam
 
     }
 

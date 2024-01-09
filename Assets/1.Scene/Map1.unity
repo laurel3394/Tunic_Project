@@ -294,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 35772077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 128298156}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperleg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133233935}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 135325559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154696161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerarm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1474,7 +1474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 161281977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 182778872}
   - component: {fileID: 182778871}
   - component: {fileID: 182778870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword 1
   m_TagString: Boss_Attack
   m_Icon: {fileID: 0}
@@ -1697,7 +1697,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192891487}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'FL: sword'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 241355021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2280,7 +2280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261677116}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2550,7 +2550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 294415068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2817,7 +2817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 317218973}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2943,7 +2943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333252218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2975,7 +2975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346451889}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CreatureFrozenIceBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3374,7 +3374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411388086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Target
   m_TagString: TargetPoint
   m_Icon: {fileID: 0}
@@ -3683,7 +3683,7 @@ GameObject:
   - component: {fileID: 450528895}
   - component: {fileID: 450528897}
   - component: {fileID: 450528896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.000 foot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4243,7 +4243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 502333202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4437,7 +4437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524305811}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4759,7 +4759,7 @@ GameObject:
   - component: {fileID: 556964042}
   - component: {fileID: 556964044}
   - component: {fileID: 556964043}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.001 head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4838,7 +4838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566087060}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4868,7 +4868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566929811}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'PS: smash'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4901,7 +4901,7 @@ GameObject:
   - component: {fileID: 585399040}
   - component: {fileID: 585399042}
   - component: {fileID: 585399041}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.003 shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4980,7 +4980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 617448881}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5010,7 +5010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 620211517}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'PS: dust'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5365,7 +5365,7 @@ GameObject:
   - component: {fileID: 682215936}
   - component: {fileID: 682215938}
   - component: {fileID: 682215937}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.004 arm (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5444,7 +5444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 684593485}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerleg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5478,7 +5478,7 @@ GameObject:
   - component: {fileID: 689626188}
   - component: {fileID: 689626190}
   - component: {fileID: 689626189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.008 leg lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5604,7 +5604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 698341225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5880,7 +5880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 729410157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5912,7 +5912,7 @@ GameObject:
   - component: {fileID: 759508318}
   - component: {fileID: 759508320}
   - component: {fileID: 759508319}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.007 leg upper (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5991,7 +5991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766609394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6147,7 +6147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777858989}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6294,7 +6294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 799874333}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6325,7 +6325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 800169600}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6451,7 +6451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830377991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6481,7 +6481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 833399423}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6807,7 +6807,7 @@ GameObject:
   - component: {fileID: 861951528}
   - component: {fileID: 861951530}
   - component: {fileID: 861951529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6999,7 +6999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 890879076}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7357,7 +7357,7 @@ GameObject:
   - component: {fileID: 925636280}
   - component: {fileID: 925636282}
   - component: {fileID: 925636281}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.007 leg upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7598,7 +7598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966313478}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8015,7 +8015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 997338760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8048,7 +8048,7 @@ GameObject:
   - component: {fileID: 999023459}
   - component: {fileID: 999023458}
   - component: {fileID: 999023457}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8140,7 +8140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1004567261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8470,7 +8470,7 @@ GameObject:
   - component: {fileID: 1029269720}
   - component: {fileID: 1029269722}
   - component: {fileID: 1029269721}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.003 shoulder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9247,7 +9247,7 @@ GameObject:
   - component: {fileID: 1090322968}
   - component: {fileID: 1090322970}
   - component: {fileID: 1090322969}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.004 arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9499,7 +9499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1103378026}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9561,7 +9561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1126371919}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9645,7 +9645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1134571046}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9776,7 +9776,7 @@ GameObject:
   - component: {fileID: 1163757604}
   - component: {fileID: 1163757606}
   - component: {fileID: 1163757605}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.000 foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9855,7 +9855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1164334219}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerleg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10157,7 +10157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1204222576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10476,7 +10476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266433287}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10816,7 +10816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291870647}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10849,7 +10849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296203797}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11381,7 +11381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1351697337}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11574,7 +11574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371077474}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11604,7 +11604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1378343095}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11712,7 +11712,7 @@ GameObject:
   - component: {fileID: 1398472426}
   - component: {fileID: 1398472428}
   - component: {fileID: 1398472427}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.006 tail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12018,7 +12018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1439262588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: neck.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12259,7 +12259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468240943}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'HT: sword'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12289,7 +12289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1472312947}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12319,7 +12319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484245210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_root_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12351,7 +12351,7 @@ GameObject:
   - component: {fileID: 1490738558}
   - component: {fileID: 1490738560}
   - component: {fileID: 1490738559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.005 hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12594,7 +12594,7 @@ GameObject:
   - component: {fileID: 1560862247}
   - component: {fileID: 1560862249}
   - component: {fileID: 1560862248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mockup_beefboy_sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12673,7 +12673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1571215336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12709,7 +12709,7 @@ GameObject:
   - component: {fileID: 1582403883}
   - component: {fileID: 1582403882}
   - component: {fileID: 1582403886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield 1
   m_TagString: shield
   m_Icon: {fileID: 0}
@@ -13425,7 +13425,7 @@ GameObject:
   - component: {fileID: 1679618571}
   - component: {fileID: 1679618573}
   - component: {fileID: 1679618572}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: icechunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13747,7 +13747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1708147481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperleg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13874,7 +13874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712246109}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14032,7 +14032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1729228532}
   - component: {fileID: 1729228531}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14149,7 +14149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1743406247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperarm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14181,7 +14181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1743776398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14373,7 +14373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776789479}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14577,7 +14577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1779001403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14931,7 +14931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839992339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15125,7 +15125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849750246}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Target
   m_TagString: TargetPoint
   m_Icon: {fileID: 0}
@@ -15250,7 +15250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1854393668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15445,7 +15445,7 @@ GameObject:
   - component: {fileID: 1875105850}
   - component: {fileID: 1875105852}
   - component: {fileID: 1875105851}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.002 body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15652,7 +15652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929997759}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15732,7 +15732,7 @@ GameObject:
   - component: {fileID: 1935325825}
   - component: {fileID: 1935325827}
   - component: {fileID: 1935325826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.006 tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15981,7 +15981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953209813}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16104,7 +16104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1963934368}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16285,7 +16285,7 @@ GameObject:
   - component: {fileID: 1980109733}
   - component: {fileID: 1980109735}
   - component: {fileID: 1980109734}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.005 hand (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16528,7 +16528,7 @@ GameObject:
   - component: {fileID: 1997739935}
   - component: {fileID: 1997739937}
   - component: {fileID: 1997739936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.008 leg lower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16737,7 +16737,7 @@ GameObject:
   - component: {fileID: 2021068250}
   - component: {fileID: 2021068252}
   - component: {fileID: 2021068251}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16818,7 +16818,7 @@ GameObject:
   - component: {fileID: 2024993928}
   - component: {fileID: 2024993930}
   - component: {fileID: 2024993929}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mockup_beefboy_shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17105,7 +17105,7 @@ GameObject:
   - component: {fileID: 2050268012}
   - component: {fileID: 2050268016}
   - component: {fileID: 2050268017}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -17595,7 +17595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101506226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17626,7 +17626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2101582962}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17805,7 +17805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2147439079}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18598,7 +18598,7 @@ GameObject:
   - component: {fileID: 1211079431876781598}
   - component: {fileID: 5212974979294180864}
   - component: {fileID: 7005884888969162363}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.003 shoulder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18980,7 +18980,7 @@ GameObject:
   - component: {fileID: 5254435557561970887}
   - component: {fileID: 2677055290610161349}
   - component: {fileID: 3348482569313158038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.004 arm (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20630,7 +20630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5532582283553051815}
   - component: {fileID: 9055909458297987641}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20877,7 +20877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4722315324383365707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21447,7 +21447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8440588485066778569}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21556,7 +21556,7 @@ GameObject:
   - component: {fileID: 3933375296836027138}
   - component: {fileID: 297822849391612418}
   - component: {fileID: 1493064256567173033}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21776,7 +21776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897841031717935044}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21922,7 +21922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992236503103726909}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperarm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22137,7 +22137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5773923748436979637}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22196,7 +22196,7 @@ GameObject:
   - component: {fileID: 1219205991481864989}
   - component: {fileID: 740645735143723427}
   - component: {fileID: 6507419098592730149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.003 shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22316,7 +22316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1965063707593925860}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22765,7 +22765,7 @@ GameObject:
   - component: {fileID: 8799129048428313174}
   - component: {fileID: 2980360082819754487}
   - component: {fileID: 463587662960963644}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.007 leg upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22781,7 +22781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 313155794883767910}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: neck.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22944,7 +22944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3001674010076153593}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_IK_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23214,7 +23214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3134368856583944308}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerarm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23305,7 +23305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3052890509654407250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23418,7 +23418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1409448038115187481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23551,7 +23551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8499208109452507359}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23842,7 +23842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2681829642304694435}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24419,7 +24419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 195792692548964656}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24905,7 +24905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204431901220627203}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerleg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25856,7 +25856,7 @@ GameObject:
   - component: {fileID: 4775558975901310914}
   - component: {fileID: 8829788769692081872}
   - component: {fileID: 3130445013621152243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.005 hand (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25894,7 +25894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7443176710703545282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26285,7 +26285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7103395367925845964}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26378,7 +26378,7 @@ GameObject:
   - component: {fileID: 1279694133045373081}
   - component: {fileID: 3179751335521185106}
   - component: {fileID: 3179751335521185107}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword 1
   m_TagString: Boss_Attack
   m_Icon: {fileID: 0}
@@ -26484,7 +26484,7 @@ GameObject:
   - component: {fileID: 4030452550287206928}
   - component: {fileID: 7281750037905899786}
   - component: {fileID: 3311465617207553750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.000 foot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26956,7 +26956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4750065093028387539}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27073,7 +27073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5816847856466268622}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27448,7 +27448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7977244747950739950}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27492,7 +27492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2932977374050675536}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'HT: sword'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27962,7 +27962,7 @@ GameObject:
   - component: {fileID: 9029629162595320810}
   - component: {fileID: 4065132972661169791}
   - component: {fileID: 2695981671838658257}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.007 leg upper (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28038,7 +28038,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 758285937696687889}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28210,7 +28210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9118463317229352022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28283,7 +28283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6379630600958588348}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28456,7 +28456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6521810492911506775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29830,7 +29830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7551984481545365533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29928,7 +29928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4173618469354059472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30761,7 +30761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5906209942524770450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'PS: smash'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30890,7 +30890,7 @@ GameObject:
   - component: {fileID: 6097631546579317062}
   - component: {fileID: 3620906511941297489}
   - component: {fileID: 8823448647332346667}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mockup_beefboy_shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33249,7 +33249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2452490466565346327}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33536,7 +33536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5222450116737073139}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_root_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34319,7 +34319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8357663935893733266}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34410,7 +34410,7 @@ GameObject:
   - component: {fileID: 3481224068410189347}
   - component: {fileID: 1519961523168786710}
   - component: {fileID: 5309908100644500752}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.006 tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34712,7 +34712,7 @@ GameObject:
   - component: {fileID: 3471188881179981196}
   - component: {fileID: 3577155465816373425}
   - component: {fileID: 6333738661643942771}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34958,7 +34958,7 @@ GameObject:
   - component: {fileID: 5159832285249155349}
   - component: {fileID: 5159832285249155350}
   - component: {fileID: 5159832285249155351}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -35091,7 +35091,7 @@ GameObject:
   - component: {fileID: 8822891477430331397}
   - component: {fileID: 8127806851570768831}
   - component: {fileID: 1805786621058167025}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.008 leg lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35557,7 +35557,7 @@ GameObject:
   - component: {fileID: 1140002970272436648}
   - component: {fileID: 1902354124033024654}
   - component: {fileID: 7350010914232532983}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.002 body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36050,7 +36050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3033611231558431261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36176,7 +36176,7 @@ GameObject:
   - component: {fileID: 8907324763814178297}
   - component: {fileID: 3156152584330003551}
   - component: {fileID: 581388432147889981}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.001 head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36452,7 +36452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7678664914768876038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36584,7 +36584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 410286936885321660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperleg_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36602,7 +36602,7 @@ GameObject:
   - component: {fileID: 299150228476687973}
   - component: {fileID: 3459681770271200685}
   - component: {fileID: 8065015318288735339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: icechunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36782,7 +36782,7 @@ GameObject:
   - component: {fileID: 5036384146124694566}
   - component: {fileID: 4196193398059554860}
   - component: {fileID: 6692497279577200167}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mockup_beefboy_sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36879,7 +36879,7 @@ GameObject:
   - component: {fileID: 8779133249099141346}
   - component: {fileID: 5197668391326044816}
   - component: {fileID: 2747160786731691656}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37097,7 +37097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1962904620395365171}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37390,7 +37390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3017460184602811819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: tail.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38032,7 +38032,7 @@ GameObject:
   - component: {fileID: 501762420536397241}
   - component: {fileID: 9017910933707519108}
   - component: {fileID: 8072922758403680779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.000 foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38048,7 +38048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1411161800944880270}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38557,7 +38557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2745568308737577066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38573,7 +38573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3741686068407115158}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38798,7 +38798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607841160852140442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CreatureFrozenIceBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39087,7 +39087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5617365737393125254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39148,7 +39148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6676665500811132023}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39164,7 +39164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8914609948674242176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperleg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39724,7 +39724,7 @@ GameObject:
   - component: {fileID: 583478321485484587}
   - component: {fileID: 1675824146677402039}
   - component: {fileID: 5760823459394414817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.006 tail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40638,7 +40638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6497072038087137460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40656,7 +40656,7 @@ GameObject:
   - component: {fileID: 9190897848886728271}
   - component: {fileID: 5824082093703255940}
   - component: {fileID: 8317580019339510942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.005 hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40745,7 +40745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8232944037375112504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40791,7 +40791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 594502048118232965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41068,7 +41068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4277651673800755769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41084,7 +41084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5601318995822894689}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'PS: dust'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41281,7 +41281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3743191416499148557}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41425,7 +41425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 725192344485323933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41441,7 +41441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8376841053461444752}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41494,7 +41494,7 @@ GameObject:
   - component: {fileID: 7606050607998514121}
   - component: {fileID: 7606050607998514122}
   - component: {fileID: 7606050607998514123}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shield 1
   m_TagString: shield
   m_Icon: {fileID: 0}
@@ -41845,7 +41845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5910299425283890489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41945,7 +41945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6031789831495397495}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_IK_pole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42398,7 +42398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7567702121954821298}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: head_IK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43155,7 +43155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 715869058125912570}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upperarm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43562,7 +43562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 569512117145690925}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'FL: sword'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44061,7 +44061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 591814928467431652}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44163,7 +44163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218592166485814923}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lowerleg_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44450,7 +44450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2614085311444052161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: arm_IK_pole_L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44653,7 +44653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4783545628164206618}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44832,7 +44832,7 @@ GameObject:
   - component: {fileID: 8303084712081832078}
   - component: {fileID: 5562519774337676735}
   - component: {fileID: 4017823204476336218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.008 leg lower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44905,7 +44905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6206056804385362932}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: toe_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45433,7 +45433,7 @@ GameObject:
   - component: {fileID: 740304237286189653}
   - component: {fileID: 3386846192975970030}
   - component: {fileID: 4879190016249679460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: beefboy_debris.004 arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45617,7 +45617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574036764166573615}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leg_rootless_IK_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
