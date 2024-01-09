@@ -13,12 +13,14 @@ public class NextStage1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInfo.instance.Fade(1f);
+            AudioManager.instance.StopPlay(AudioManager.Bgm.Lobby);
             StartCoroutine(NextGate());
         }
     }
     private IEnumerator NextGate()
     {
         yield return new WaitForSeconds(1f);
+        AudioManager.instance.PlayBGM(AudioManager.Bgm.Ending);
         SceneManager.LoadScene("Ending");
     }
 }

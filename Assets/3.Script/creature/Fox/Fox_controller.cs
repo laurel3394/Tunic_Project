@@ -106,15 +106,15 @@ public class Fox_controller : Living
             // 회전
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * Fox_Rot_Speed);
             ani.SetBool("PlayerWalk", true);
-            if (Foxmove&& !AudioManager.instance.sfxPlayer[(int)AudioManager.Sfx.FoxWalk].isPlaying)
-            {
-                AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxWalk);
-            }
+            //if (Foxmove&& !AudioManager.instance.sfxPlayer[(int)AudioManager.Sfx.FoxWalk].isPlaying)
+            //{
+            //    AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxWalk);
+            //}
         }
         else
         {
             ani.SetBool("PlayerWalk", false);
-            AudioManager.instance.StopPlay(AudioManager.Sfx.FoxWalk);
+            //AudioManager.instance.StopPlay(AudioManager.Sfx.FoxWalk);
         }
 
     }
@@ -344,17 +344,7 @@ public class Fox_controller : Living
     }
     private void OnTriggerEnter(Collider other)   //맞는 애니메이션 적용
     {
-        if (currentHp <= 0 && DeadCount == 0)
-        {
-            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxDie);
-            DeadCount++;
-            PlayerRollMask();
-            ani.SetTrigger("Fox_Die");
-            PlayerInfo.instance.Fade(0.3f);
-            Invoke("DieFade", 3.6f);
-            return;
-        }
-        if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player") && currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Combocount = 0;
@@ -367,7 +357,7 @@ public class Fox_controller : Living
             HPslider.value = currentHp;
             SPslider.value = currentSp;
         }
-        if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player") && currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Vector3 dir = other.transform.position - this.transform.position;
@@ -383,7 +373,7 @@ public class Fox_controller : Living
             HPslider.value = currentHp;
             SPslider.value = currentSp;
         }
-        if (other.CompareTag("Boss_Bullet") && this.gameObject.layer == LayerMask.NameToLayer("Player"))
+        if (other.CompareTag("Boss_Bullet") && this.gameObject.layer == LayerMask.NameToLayer("Player")&& currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
             Combocount = 0;
@@ -391,10 +381,21 @@ public class Fox_controller : Living
             ani.SetBool("Attack1", false);
             ani.SetBool("Attack2", false);
             StartCoroutine(PlayerHit());
+            Invoke("FoxmoveControll", 1f);
             CameraControll.instance.OnShakeCamera(0.1f, 1f);
             OnDamage(20, DieTime);
             HPslider.value = currentHp;
             SPslider.value = currentSp;
+        }
+        if (currentHp <= 0 && DeadCount == 0)
+        {
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxDie);
+            DeadCount++;
+            PlayerRollMask();
+            ani.SetTrigger("Fox_Die");
+            PlayerInfo.instance.Fade(0.3f);
+            Invoke("DieFade", 3.6f);
+            return;
         }
     }
     private void DieFade()

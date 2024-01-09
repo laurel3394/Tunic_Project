@@ -26,4 +26,13 @@ public class Potal : MonoBehaviour
             yield return null;
         }
     }
+
+    public void PotalOpen1()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Potal_Open01);
+    }
+    public void PotalOpen2()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Potal_Open02);
+    }
 }

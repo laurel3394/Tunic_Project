@@ -23,6 +23,11 @@ public class OptionSettiog : MonoBehaviour
     {
         AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         Settingpage.SetActive(false);
+        Time.timeScale = 1;
+        if (start==null && setting == null && Exit == null)
+        {
+            return;
+        }
         start.SetActive(true);
         setting.SetActive(true);
         Exit.SetActive(true);

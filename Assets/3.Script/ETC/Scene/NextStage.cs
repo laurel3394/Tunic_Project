@@ -14,6 +14,7 @@ public class NextStage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInfo.instance.Fade(1f);
+            AudioManager.instance.StopPlay(AudioManager.Bgm.Lobby);
             StartCoroutine(NextGate());
         }
     }
@@ -22,6 +23,7 @@ public class NextStage : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("BossRoom");
         Fox_controller.instance.transform.position = new Vector3(-0.76f, 0, -0.94f);
+        AudioManager.instance.PlayBGM(AudioManager.Bgm.Scavenger);
         Light1.SetActive(true);
         Light2.SetActive(true);
         Light3.SetActive(true);

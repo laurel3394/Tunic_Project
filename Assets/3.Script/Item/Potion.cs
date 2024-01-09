@@ -40,6 +40,7 @@ public class Potion : MonoBehaviour
                 default:
                     return;
             }
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.GetPotion);
             Fox_controller.instance.Potion.Enqueue(this.gameObject);
             Fox_controller.instance.PotionCount++;
             Destroy(gameObject);

@@ -11,8 +11,8 @@ public class SoundSlider : MonoBehaviour
 
     private void Start()
     {
-        BGMslider.maxValue = 10f;
-        SFXslider.maxValue = 10f;
+        BGMslider.maxValue = 1f;
+        SFXslider.maxValue = 1f;
 
         BGMslider.value = AudioManager.instance.bgmVolume;
         SFXslider.value = AudioManager.instance.sfxVolume;

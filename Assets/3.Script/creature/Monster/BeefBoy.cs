@@ -168,11 +168,13 @@ public class BeefBoy : Living
             {
                 skinned.material = mat;
                 Boss_Layer();
+                AudioManager.instance.PlaySFX(AudioManager.Sfx.BeefBoy_Die);
                 ani.SetTrigger("RottenMeat");
                 StopAllCoroutines();
                 return;
             }
             ani.SetTrigger("Schnitzel");
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.BeefBoy_Hit);
             StartCoroutine(Beef_Hit());
         }
     }

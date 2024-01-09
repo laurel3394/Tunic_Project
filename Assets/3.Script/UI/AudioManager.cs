@@ -34,7 +34,19 @@ public class AudioManager : MonoBehaviour
         FoxSwing3,
         FoxWalk,
         FoxDie,
-        Button
+        Button,
+        Fox_Roll,
+        Fox_Parry,
+        BeefBoy_Swing1,
+        BeefBoy_Swing2,
+        BeefBoy_Hit,
+        BeefBoy_Die,
+        Beef_freash,
+        Potal_Open01,
+        Potal_Open02,
+        GetPotion,
+        UsePotion,
+
     }
 
 
