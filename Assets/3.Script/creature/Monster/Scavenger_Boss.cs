@@ -54,6 +54,7 @@ public class Scavenger_Boss : Living
 
     private IEnumerator Fox_Scanner()
     {
+        float num = 0;
         while (true)
         {
            float distance = Vector3.Distance(transform.position, Fox_controller.instance.transform.position);
@@ -330,20 +331,24 @@ public class Scavenger_Boss : Living
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
-            CameraControll.instance.OnShakeCamera(0.05f, 1f);
+            CameraControll.instance.OnShakeCamera(0.1f, 1f);
             StartCoroutine(Boss_Hit());
+            AudioManager.instance.PlaySFX(AudioManager.Sfx.BeefBoy_Hit);
             OnDamage(Fox_controller.instance.Damage, DieTime);
             Boss_Hpslider.value = currentHp;
             forntHp.SetActive(false);
         }
         if (currentHp <=0)
         {
+            AudioManager.instance.StopPlay(AudioManager.Bgm.Lobby);
+            AudioManager.instance.PlayBGM(AudioManager.Bgm.Boss_Dead);
             EndHp.SetActive(false);
             weapon1.SetActive(false);
             weapon2.SetActive(false);
             weapon3.SetActive(false);
             weapon4.SetActive(false);
             Potal.SetActive(true);
+
             TargetPoint.tag = "Enemy";
             Boss_Layer();
             Time.timeScale = 0.5f;

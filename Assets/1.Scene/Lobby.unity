@@ -1870,6 +1870,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8a3c753f3bc7c1d468aed21def6de5c9, type: 3}
   - {fileID: 8300000, guid: 6f0064aec3be26145a30d0dd5221bb69, type: 3}
   - {fileID: 8300000, guid: b862ce096b140ff449e7df896029ac0d, type: 3}
+  - {fileID: 8300000, guid: 81a6ef7bf02acf14689daa2567530d84, type: 3}
   bgmVolume: 0.5
   bgmPlayer: []
   sfxClip:
@@ -1892,8 +1893,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 616b0ba23e3b58f40bbe30b8d88aff70, type: 3}
   - {fileID: 8300000, guid: c9123466533245446ad0fe1498b4a9d0, type: 3}
   - {fileID: 8300000, guid: caccc8e681342eb4bb242b60f26cef67, type: 3}
+  - {fileID: 8300000, guid: 1e2eaa351c27b37468f3a364b634cec9, type: 3}
+  - {fileID: 8300000, guid: aa79b467dea57e44baa2bba5ef5f2045, type: 3}
+  - {fileID: 8300000, guid: 93ffb0930ccaad0419135816a7cd44fb, type: 3}
+  - {fileID: 8300000, guid: a9e16314175a1fa4a97c89bbf981cdf9, type: 3}
+  - {fileID: 8300000, guid: be6dfbb24adae584a915662bbb94612f, type: 3}
+  - {fileID: 8300000, guid: 6b02da13654f35a4b81d11d2d2c3627d, type: 3}
+  - {fileID: 8300000, guid: 99005867ad590374083eb52f4392f637, type: 3}
+  - {fileID: 8300000, guid: 56a4ab02f44d02443a52ca6e5c6eaf72, type: 3}
   sfxVolume: 0.5
   sfxPlayer: []
+  speed: 0.5
 --- !u!1 &1296739797
 GameObject:
   m_ObjectHideFlags: 0

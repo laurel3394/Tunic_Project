@@ -6,7 +6,7 @@ public class BeefBoy_Shield : MonoBehaviour
 {
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("PlayerAttack")|| other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             BeefBoy.Shield_Damage = 15;
             StopCoroutine(Shield());

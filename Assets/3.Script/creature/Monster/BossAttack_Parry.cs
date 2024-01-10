@@ -23,6 +23,7 @@ public class BossAttack_Parry : MonoBehaviour
     private IEnumerator Parry()
     {
         ani.SetTrigger("Parry");
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Fox_Parry);
         yield return new WaitForSeconds(1.28f);
     }
 }

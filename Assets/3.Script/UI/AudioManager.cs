@@ -15,16 +15,17 @@ public class AudioManager : MonoBehaviour
     public float sfxVolume;
     public AudioSource[] sfxPlayer;
 
+    [SerializeField] float speed = 1f;
     private int channalindex;
     private int BGMindex;
-
 
     public enum Bgm
     {
         Lobby,
         Map1,
         Scavenger,
-        Ending
+        Ending,
+        Boss_Dead
     }
     public enum Sfx
     {
@@ -46,7 +47,15 @@ public class AudioManager : MonoBehaviour
         Potal_Open02,
         GetPotion,
         UsePotion,
-        Fox_Beam
+        Fox_Beam,
+        Boss_JumpDown,
+        Boss_Swing1,
+        Boss_Swing2,
+        Boss_Fire,
+        Boss_Ice,
+        Boss_Skill,
+        Boss_Die,
+        Boss_Howling
 
     }
 
@@ -68,6 +77,7 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
+
         bgmPlayer[BGMindex].volume = bgmVolume;
         sfxPlayer[channalindex].volume = sfxVolume;
     }
@@ -101,7 +111,6 @@ public class AudioManager : MonoBehaviour
             sfxPlayer[i].volume = bgmVolume;
         }
     }
-
     public void PlayBGM(Bgm bgm)
     {
         for (int i = 0; i < bgmPlayer.Length; i++)
@@ -143,8 +152,6 @@ public class AudioManager : MonoBehaviour
     {
         sfxPlayer[(int)sfx].Stop();
     }
-
-
 
     private void Instance()
     {

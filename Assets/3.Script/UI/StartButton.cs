@@ -13,5 +13,4 @@ public class StartButton : MonoBehaviour
         AudioManager.instance.PlayBGM(AudioManager.Bgm.Map1);
     }
 
-
 }

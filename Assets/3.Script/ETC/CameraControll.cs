@@ -24,7 +24,10 @@ public class CameraControll : MonoBehaviour
 
     private void Update()
     {
-        
+        if (this.transform.localEulerAngles != new Vector3(45f, 0, 0))
+        {
+            this.transform.localEulerAngles = new Vector3(45f, 0, 0);
+        }
     }
 
     public void OnShakeCamera(float shakeTime = 1.0f,float shakeIntensity = 0.1f)
