@@ -5,6 +5,9 @@ using UnityEngine;
 public class cannon : MonoBehaviour
 {
     [SerializeField] private GameObject gameObject;
+    [SerializeField] private GameObject Stand;
+    [SerializeField] private GameObject Ball;
+    private Shooter targetpos;
     [Range(0, 1)]
     [SerializeField] private float Test;
     [SerializeField] private float speed;
@@ -13,7 +16,12 @@ public class cannon : MonoBehaviour
     public Vector3 P2;
     public Vector3 P3;
     public Vector3 P4;
-
+    AudioSource Lightsound;
+    private void Awake()
+    {
+        Lightsound = GetComponent<AudioSource>();
+        Lightsound.volume = AudioManager.instance.sfxVolume;
+    }
     private void Start()
     {
         Test = 0f;
@@ -24,7 +32,10 @@ public class cannon : MonoBehaviour
         P4 = Fox_controller.instance.transform.position;
         StartCoroutine(Shooot());
     }
-
+    private void Update()
+    {
+        Lightsound.volume = AudioManager.instance.sfxVolume;
+    }
     private IEnumerator Shooot()
     {
         while (true)
@@ -34,7 +45,10 @@ public class cannon : MonoBehaviour
             yield return null;
             if (Test >=1)
             {
-                Destroy(gameObject);
+                Ball.SetActive(false);
+                Stand.SetActive(true);
+                Lightsound.Play();
+                Destroy(gameObject,3f);
                 break;
             }
         }

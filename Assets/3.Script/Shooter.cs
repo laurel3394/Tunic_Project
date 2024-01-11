@@ -6,7 +6,8 @@ public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject Bullet;
     [SerializeField] GameObject Boss;
-    float time = 0;
+    [SerializeField] public GameObject target;
+    [SerializeField] private float time;
     private void Start()
     {
         StartCoroutine(Shooooooooot());
@@ -16,12 +17,23 @@ public class Shooter : MonoBehaviour
         while (Boss != null)
         {
             time += Time.deltaTime;
-            if (time >= 10f)
+            if (time >= 1.5f)
             {
+                target.SetActive(false);
+            }
+            if (time >= 7f)
+            {
+                AudioManager.instance.PlaySFX(AudioManager.Sfx.CannonShoot);
+                targetOn();
                 time = 0f;
                 Instantiate(Bullet,this.transform.position,this.transform.rotation);
             }
             yield return null;
         }
+    }
+    private void targetOn()
+    {
+        target.transform.position = Fox_controller.instance.transform.position;
+        target.SetActive(true);
     }
 }

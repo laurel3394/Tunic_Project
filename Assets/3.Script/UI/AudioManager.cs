@@ -55,7 +55,8 @@ public class AudioManager : MonoBehaviour
         Boss_Ice,
         Boss_Skill,
         Boss_Die,
-        Boss_Howling
+        Boss_Howling,
+        CannonShoot
 
     }
 

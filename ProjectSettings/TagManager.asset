@@ -12,6 +12,7 @@ TagManager:
   - Potal
   - shield
   - Boss_Bullet
+  - Target
   layers:
   - Default
   - TransparentFX

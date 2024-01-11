@@ -166,11 +166,11 @@ public class BeefBoy : Living
             OnDamage(Fox_controller.instance.Damage - Shield_Damage, DieTime);
             if (currentHp <= 0)
             {
+                ani.SetTrigger("RottenMeat");
+                StopAllCoroutines();
                 skinned.material = mat;
                 Boss_Layer();
                 AudioManager.instance.PlaySFX(AudioManager.Sfx.BeefBoy_Die);
-                ani.SetTrigger("RottenMeat");
-                StopAllCoroutines();
                 return;
             }
             ani.SetTrigger("Schnitzel");
