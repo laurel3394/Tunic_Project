@@ -17,6 +17,7 @@ public class BeefBoy : Living
     {
         Onenable();
         ani = GetComponent<Animator>();
+        skinned.material = mat;
     }
     private void Start()
     {
