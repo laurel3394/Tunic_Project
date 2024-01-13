@@ -14,7 +14,7 @@ public class Shooter : MonoBehaviour
     }
     private IEnumerator Shooooooooot()
     {
-        while (Boss != null)
+        while (Boss.layer != LayerMask.NameToLayer("EnemyDie"))
         {
             time += Time.deltaTime;
             if (time >= 1.5f)
