@@ -31,12 +31,14 @@ public class Shoot_BigStick : MonoBehaviour
                         Pos1_stick.transform.position = Pos1.transform.position;
                         Pos1_stick.transform.rotation = Pos1.transform.rotation;
                         Pos1_stick.SetActive(true);
+                        Pos1_stick.GetComponent<Long_Big_Stick>().StartStick();
                         break;
                     case 1:
                         GameObject Pos2_stick = StickPool.instance.stickpool.Dequeue();
                         Pos2_stick.transform.position = Pos2.transform.position;
                         Pos2_stick.transform.rotation = Pos2.transform.rotation;
                         Pos2_stick.SetActive(true);
+                        Pos2_stick.GetComponent<Long_Big_Stick>().StartStick();
                         break;
                     default:
                         break;

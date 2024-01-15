@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class Long_Big_Stick : Living
 {
-    [SerializeField] private float time;
+    [SerializeField] private float timmer;
     [SerializeField] private float sitckSpeed;
+    //private void Start()
+    //{
+    //    StartCoroutine(FoxPusher());
+    //}
     private void Start()
     {
         StartCoroutine(FoxPusher());
     }
     private IEnumerator FoxPusher()
     {
-        while (time <= 7f)
+        while (timmer <= 7f)
         {
-            time += Time.deltaTime;
-            transform.Translate(Vector3.forward *time * sitckSpeed);
+            timmer += Time.deltaTime;
+            transform.Translate(Vector3.forward * timmer * sitckSpeed);
             yield return null;
         }
+        timmer = 0f;
         this.gameObject.SetActive(false);
-        StickPool.instance.stickpool.Enqueue(gameObject);
+        StickPool.instance.stickpool.Enqueue(this.gameObject);
+    }
+    public void StartStick()
+    {
+        StartCoroutine(FoxPusher());
     }
 }

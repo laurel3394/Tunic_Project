@@ -8,7 +8,7 @@ public class StickPool : MonoBehaviour
 
     public Queue<GameObject> stickpool = new Queue<GameObject>();
     public GameObject stick;
-    [SerializeField] private int stickcount;
+    [SerializeField] private int stickcount =20;
 
     private void Awake()
     {
@@ -37,12 +37,5 @@ public class StickPool : MonoBehaviour
         }
     }
 
-    private void stickSpawn(Vector3 position)
-    {
-        if (true)
-        {
-
-        }
-    }
 
 }
