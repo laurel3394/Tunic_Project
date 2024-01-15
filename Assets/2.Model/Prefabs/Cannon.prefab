@@ -121088,6 +121088,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997de36bd776ff14fa02c78b2ec7a2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MonsterDamage: 10
+  currentHp: 0
+  currentSp: 0
+  StartHp: 0
+  StartSp: 0
+  Speed: 0
+  DieTime: 0
   gameObject: {fileID: 5457552603997960645}
   Stand: {fileID: 6876462162236138222}
   Ball: {fileID: 8604810510268245789}

@@ -29,7 +29,7 @@ public class Fox_controller : Living
     private bool FoxAttack = true;
     public bool FoxFocus = true;
     public bool FoxExhausted = false;
-    
+    public bool action = false;
     [Header("È®ÀÎ¿ë")]
     [SerializeField] private int Combocount = 0;
     private float AttackTime = 0;
@@ -75,6 +75,7 @@ public class Fox_controller : Living
         {
             currentSp = 1f;
             Sp_Roll = 60;
+            Fox_SPrecovery_Speed = 7f;
             FoxExhausted = true;
             SPlight.SetActive(true);
         }
@@ -83,6 +84,7 @@ public class Fox_controller : Living
         {
             currentSp = StartSp;
             Sp_Roll = 30;
+            Fox_SPrecovery_Speed = 13f;
             FoxExhausted = false;
             SPlight.SetActive(false);
         }
@@ -173,7 +175,7 @@ public class Fox_controller : Living
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && Foxmove && !isDead)
+        if (Input.GetKeyDown(KeyCode.Space) && Foxmove &&!action && !isDead)
         {
             if (currentSp < Sp_Roll)
             {
@@ -323,6 +325,11 @@ public class Fox_controller : Living
         FoxFocus = true;
     }
 
+    public void Fox_OpenChest()
+    {
+        ani.SetTrigger("PlayerOpen");
+    }
+
     private void Fox_instance()
     {
         if (instance == null)
@@ -335,6 +342,7 @@ public class Fox_controller : Living
             Destroy(gameObject);
         }
     }
+
     public void PlayerRollMask()
     {
         gameObject.layer = LayerMask.NameToLayer("PlayerRoll");

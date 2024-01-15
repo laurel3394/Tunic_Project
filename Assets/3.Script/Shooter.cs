@@ -8,6 +8,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject Boss;
     [SerializeField] public GameObject target;
     [SerializeField] private float time;
+    [SerializeField] private float shoottime;
     private void Start()
     {
         StartCoroutine(Shooooooooot());
@@ -21,7 +22,7 @@ public class Shooter : MonoBehaviour
             {
                 target.SetActive(false);
             }
-            if (time >= 7f)
+            if (time >= shoottime)
             {
                 AudioManager.instance.PlaySFX(AudioManager.Sfx.CannonShoot);
                 targetOn();
@@ -29,7 +30,7 @@ public class Shooter : MonoBehaviour
                 Instantiate(Bullet,this.transform.position,this.transform.rotation);
             }
             yield return null;
-        }
+        }   
     }
     private void targetOn()
     {
