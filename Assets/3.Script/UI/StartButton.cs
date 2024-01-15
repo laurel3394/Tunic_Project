@@ -17,7 +17,7 @@ public class StartButton : MonoBehaviour
         AudioManager.instance.StopPlay(AudioManager.Bgm.Lobby);
         AudioManager.instance.PlaySFX(AudioManager.Sfx.Button);
         SceneManager.LoadScene("Minigame");
-        AudioManager.instance.PlayBGM(AudioManager.Bgm.Map1);
+        AudioManager.instance.PlayBGM(AudioManager.Bgm.MiniGame);
     }
 
 }

@@ -12,6 +12,7 @@ public class Fox_controller : Living
     [SerializeField] private GameObject Wand;
     [SerializeField] private GameObject HandPotion;
     [SerializeField] private GameObject Beam;
+    [SerializeField] private GameObject Hair;
     [SerializeField] private float Fox_Rot_Speed;
     [SerializeField] private float Fox_SPrecovery_Speed;
     [SerializeField] public int Damage;
@@ -22,8 +23,9 @@ public class Fox_controller : Living
     [Header("머티리얼")]
     [SerializeField] private GameObject FoxBody;
     [SerializeField] private SkinnedMeshRenderer skinned;
-    [SerializeField] private Material mat;
-    [SerializeField] private Material mat2;
+    [SerializeField] public Material mat;
+    [SerializeField] public Material mat2;
+    [SerializeField] public Material NightMat;
     [SerializeField] private Skybox skybox;
     private bool Foxmove = true;
     private bool FoxAttack = true;
@@ -264,7 +266,11 @@ public class Fox_controller : Living
             yield return new WaitForSeconds(0.05f);
         }
     }
-
+    public void FoxNight()
+    {
+        Hair.GetComponentInChildren<SkinnedMeshRenderer>().material = mat;
+        skinned.material = mat;
+    }
     private void FoxSp(int Sp)
     {
         currentSp -= Sp;

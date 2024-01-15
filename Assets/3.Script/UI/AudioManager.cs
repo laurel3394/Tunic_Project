@@ -25,7 +25,8 @@ public class AudioManager : MonoBehaviour
         Map1,
         Scavenger,
         Ending,
-        Boss_Dead
+        Boss_Dead,
+        MiniGame
     }
     public enum Sfx
     {
@@ -56,7 +57,8 @@ public class AudioManager : MonoBehaviour
         Boss_Skill,
         Boss_Die,
         Boss_Howling,
-        CannonShoot
+        CannonShoot,
+        Chest
 
     }
 

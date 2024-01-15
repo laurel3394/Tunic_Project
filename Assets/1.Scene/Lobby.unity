@@ -1871,6 +1871,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6f0064aec3be26145a30d0dd5221bb69, type: 3}
   - {fileID: 8300000, guid: b862ce096b140ff449e7df896029ac0d, type: 3}
   - {fileID: 8300000, guid: 81a6ef7bf02acf14689daa2567530d84, type: 3}
+  - {fileID: 8300000, guid: 63f5082e1b660e94f99b4a4fb66d21a0, type: 3}
   bgmVolume: 0.5
   bgmPlayer: []
   sfxClip:
@@ -1902,6 +1903,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 99005867ad590374083eb52f4392f637, type: 3}
   - {fileID: 8300000, guid: 56a4ab02f44d02443a52ca6e5c6eaf72, type: 3}
   - {fileID: 8300000, guid: be1f5b8d57975d64fac1cd96922e3921, type: 3}
+  - {fileID: 8300000, guid: 5ad5b7a5966712f4b8519eae8fdcf457, type: 3}
   sfxVolume: 0.5
   sfxPlayer: []
   speed: 0.5

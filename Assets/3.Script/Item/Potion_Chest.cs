@@ -34,6 +34,11 @@ public class Potion_Chest : MonoBehaviour
         }
     }
 
+    private void OpenSound()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.Sfx.Chest);
+    }
+
     private void ChestOpen()
     {
         
