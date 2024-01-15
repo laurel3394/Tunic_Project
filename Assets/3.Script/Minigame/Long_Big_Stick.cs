@@ -5,6 +5,7 @@ using UnityEngine;
 public class Long_Big_Stick : Living
 {
     [SerializeField] private float timmer;
+    [SerializeField] private float MaxTime;
     [SerializeField] private float sitckSpeed;
     //private void Start()
     //{
@@ -16,7 +17,7 @@ public class Long_Big_Stick : Living
     }
     private IEnumerator FoxPusher()
     {
-        while (timmer <= 7f)
+        while (timmer <= MaxTime)
         {
             timmer += Time.deltaTime;
             transform.Translate(Vector3.forward * timmer * sitckSpeed);

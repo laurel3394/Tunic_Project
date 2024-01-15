@@ -115,5 +115,6 @@ MonoBehaviour:
   StartSp: 0
   Speed: 0
   DieTime: 0
-  time: 0
+  timmer: 0
+  MaxTime: 14
   sitckSpeed: 0.01
