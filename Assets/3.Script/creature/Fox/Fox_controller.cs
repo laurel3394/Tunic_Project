@@ -27,7 +27,7 @@ public class Fox_controller : Living
     [SerializeField] public Material mat2;
     [SerializeField] public Material NightMat;
     [SerializeField] private Skybox skybox;
-    private bool Foxmove = true;
+    public bool Foxmove = true;
     private bool FoxAttack = true;
     public bool FoxFocus = true;
     public bool FoxExhausted = false;
@@ -36,7 +36,7 @@ public class Fox_controller : Living
     [SerializeField] private int Combocount = 0;
     private float AttackTime = 0;
     private float maxComboDelay = 1.2f;
-    private Rigidbody rigi;
+    public Rigidbody rigi;
     private float h, v;  //πÊ«‚
 
     [Header("UI")]

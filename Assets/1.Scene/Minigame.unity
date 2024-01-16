@@ -1207,7 +1207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e3e0c969b794832469362e8582dd46fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cebf6b006e2fb444ba5cd820851d48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 847478569096765206, guid: d74aa99209ffce349aa2c9370cc51686, type: 3}
+  stick: {fileID: 8848986914748273697, guid: ea02a37f60fb9ac4eafbec1673af25d3, type: 3}
   stickcount: 20
 --- !u!1 &1407354456
 GameObject:
@@ -10621,10 +10621,12 @@ MonoBehaviour:
   mat2: {fileID: 2100000, guid: 8cba2b4a880262e45884a764b09609a7, type: 2}
   NightMat: {fileID: 0}
   skybox: {fileID: 0}
+  Foxmove: 1
   FoxFocus: 1
   FoxExhausted: 1
   action: 0
   Combocount: 0
+  rigi: {fileID: 0}
   HPslider: {fileID: 7804420867534018509}
   SPslider: {fileID: 7804420866627262127}
   SPlight: {fileID: 7804420867412901789}

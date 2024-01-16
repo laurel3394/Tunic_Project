@@ -8,6 +8,8 @@ public class OptionSettiog : MonoBehaviour
     [SerializeField] private GameObject start;
     [SerializeField] private GameObject setting;
     [SerializeField] private GameObject Exit;
+    [SerializeField] private GameObject Mini1;
+    [SerializeField] private GameObject Mini2;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -17,6 +19,8 @@ public class OptionSettiog : MonoBehaviour
             start.SetActive(true);
             setting.SetActive(true);
             Exit.SetActive(true);
+            Mini1.SetActive(true);
+            Mini2.SetActive(true);  
         }       
     }
     public void Escape()
@@ -31,5 +35,7 @@ public class OptionSettiog : MonoBehaviour
         start.SetActive(true);
         setting.SetActive(true);
         Exit.SetActive(true);
+        Mini1.SetActive(true);
+        Mini2.SetActive(true);
     }
 }
