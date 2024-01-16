@@ -15,13 +15,13 @@ public class CloudControll : MonoBehaviour
             Platform[i].SetActive(false);
         }
     }
-    public void MinigameHeaven()
+    public IEnumerator MinigameHeaven()
     {
+        yield return new WaitForSeconds(0.3f);
         int plat;
-
         plat = Random.Range(0, Platform.Length);
         Platform[plat].SetActive(true);
-
+        
     }
 
 }

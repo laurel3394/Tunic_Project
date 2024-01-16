@@ -58,7 +58,8 @@ public class AudioManager : MonoBehaviour
         Boss_Die,
         Boss_Howling,
         CannonShoot,
-        Chest
+        Chest,
+        Jump
 
     }
 

@@ -36,8 +36,9 @@ public class Clouds : MonoBehaviour
             {
                 Fox_controller.instance.Foxmove = true;
                 Fox_controller.instance.rigi.AddForce(Vector3.up * Power, ForceMode.VelocityChange);
-                cloudControll.MinigameHeaven();
+                AudioManager.instance.PlaySFX(AudioManager.Sfx.Jump);
                 this.gameObject.SetActive(false);
+                cloudControll.StartCoroutine(cloudControll.MinigameHeaven());
             }
             yield return null;
         }
