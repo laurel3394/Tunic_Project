@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cannon : Living
 {
-    [SerializeField] private GameObject gameObject;
+    [SerializeField] private GameObject Target;
     [SerializeField] private GameObject Stand;
     [SerializeField] private GameObject Ball;
     private Shooter targetpos;
@@ -41,7 +41,7 @@ public class cannon : Living
         while (true)
         {
             Test += Time.deltaTime*speed;
-            gameObject.transform.position = Bezier(P1, P2, P3, P4, Test);
+            Target.transform.position = Bezier(P1, P2, P3, P4, Test);
             yield return null;
             if (Test >=1)
             {

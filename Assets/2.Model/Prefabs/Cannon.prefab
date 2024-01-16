@@ -121095,7 +121095,7 @@ MonoBehaviour:
   StartSp: 0
   Speed: 0
   DieTime: 0
-  gameObject: {fileID: 5457552603997960645}
+  Target: {fileID: 5457552603997960645}
   Stand: {fileID: 6876462162236138222}
   Ball: {fileID: 8604810510268245789}
   Test: 0
