@@ -1700,7 +1700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1687432503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 742636772282954769, guid: 62683b8861eb10f4d897e0ea9b87ea34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17212,7 +17212,7 @@ MonoBehaviour:
   Potion_Slot1: {fileID: 640596137451556624}
   Potion_Slot2: {fileID: 640596138085976836}
   Potion_Slot3: {fileID: 640596138524122446}
-  player: {fileID: 0}
+  player: {fileID: 4004505213183580}
   PotionCount: 0
 --- !u!4 &4690058897801087116
 Transform:

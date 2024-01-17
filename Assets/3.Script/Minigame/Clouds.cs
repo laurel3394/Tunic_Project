@@ -6,6 +6,8 @@ public class Clouds : MonoBehaviour
 {
     [SerializeField] float Power;
     Renderer renderer;
+    int count = 0;
+    float jumptime = 1f;
     private CloudControll cloudControll;
     private void Awake()
     {
@@ -31,9 +33,10 @@ public class Clouds : MonoBehaviour
         while (timmer <= 2f)
         {
             timmer += Time.deltaTime;
-
-            if (timmer >= 1f)
+            if (timmer >= jumptime)
             {
+                count++;
+                jumptime *= 0.5f;
                 Fox_controller.instance.Foxmove = true;
                 Fox_controller.instance.rigi.AddForce(Vector3.up * Power, ForceMode.VelocityChange);
                 AudioManager.instance.PlaySFX(AudioManager.Sfx.Jump);
