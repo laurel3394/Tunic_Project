@@ -38301,6 +38301,7 @@ MonoBehaviour:
   Potion_Slot1: {fileID: 8375229483889785350}
   Potion_Slot2: {fileID: 8375229483391876626}
   Potion_Slot3: {fileID: 8375229482820102232}
+  player: {fileID: 0}
   PotionCount: 0
 --- !u!136 &1893203626
 CapsuleCollider:
@@ -70264,6 +70265,7 @@ MonoBehaviour:
   Potion_Slot1: {fileID: 8375229483889785350}
   Potion_Slot2: {fileID: 8375229483391876626}
   Potion_Slot3: {fileID: 8375229482820102232}
+  player: {fileID: 0}
   PotionCount: 0
 --- !u!95 &3950995485369709511
 Animator:
@@ -71891,7 +71893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5c5b4b318d14684a92d8ce95ca503fa, type: 2}
+  - {fileID: 2100000, guid: 3efa8809cef0ab143b4889b65e695059, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
