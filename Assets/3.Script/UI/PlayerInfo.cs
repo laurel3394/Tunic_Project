@@ -63,7 +63,7 @@ public class PlayerInfo : MonoBehaviour
     public IEnumerator HitRedFox()
     {
         Hit.gameObject.SetActive(true);
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.04f);
         Hit.gameObject.SetActive(false);
     }    
 
