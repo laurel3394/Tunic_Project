@@ -7,6 +7,7 @@ public class PlayerInfo : MonoBehaviour
 {
     public static PlayerInfo instance = null;
     public Image Panel;
+    public Image Hit;
     float time = 0f;
     float F_time = 1f;
 
@@ -59,5 +60,11 @@ public class PlayerInfo : MonoBehaviour
         yield return null;
     }
 
+    public IEnumerator HitRedFox()
+    {
+        Hit.gameObject.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        Hit.gameObject.SetActive(false);
+    }    
 
 }

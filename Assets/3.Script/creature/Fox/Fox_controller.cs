@@ -46,6 +46,7 @@ public class Fox_controller : Living
     [SerializeField] GameObject Potion_Slot1;
     [SerializeField] GameObject Potion_Slot2;
     [SerializeField] GameObject Potion_Slot3;
+    [SerializeField]PlayerInfo player;
 
     [Header("Item")]
     public Queue<GameObject> Potion = new Queue<GameObject>();
@@ -362,6 +363,7 @@ public class Fox_controller : Living
         if (other.CompareTag("Boss_Attack")&&this.gameObject.layer == LayerMask.NameToLayer("Player") && currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
+            player.StartCoroutine(player.HitRedFox());
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);
@@ -375,6 +377,7 @@ public class Fox_controller : Living
         if (other.CompareTag("Boss_Hard_Attack") && this.gameObject.layer == LayerMask.NameToLayer("Player") && currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
+            player.StartCoroutine(player.HitRedFox());
             Vector3 dir = other.transform.position - this.transform.position;
             dir.y = 0;
             this.transform.forward = dir.normalized;
@@ -391,6 +394,7 @@ public class Fox_controller : Living
         if (other.CompareTag("Boss_Bullet") && this.gameObject.layer == LayerMask.NameToLayer("Player")&& currentHp > 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.Sfx.FoxHit);
+            player.StartCoroutine(player.HitRedFox());
             Combocount = 0;
             ani.SetBool("Attack", false);
             ani.SetBool("Attack1", false);

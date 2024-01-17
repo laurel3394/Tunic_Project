@@ -38276,6 +38276,7 @@ MonoBehaviour:
   Wand: {fileID: 1080216909}
   HandPotion: {fileID: 0}
   Beam: {fileID: 601847330}
+  Hair: {fileID: 0}
   Fox_Rot_Speed: 5
   Fox_SPrecovery_Speed: 15
   Damage: 0
@@ -38288,10 +38289,12 @@ MonoBehaviour:
   mat2: {fileID: 2100000, guid: 8cba2b4a880262e45884a764b09609a7, type: 2}
   NightMat: {fileID: 0}
   skybox: {fileID: 0}
+  Foxmove: 1
   FoxFocus: 1
   FoxExhausted: 1
   action: 0
   Combocount: 0
+  rigi: {fileID: 0}
   HPslider: {fileID: 8995705028357240333}
   SPslider: {fileID: 8995705026900506479}
   SPlight: {fileID: 8995705028226702941}
@@ -70236,6 +70239,7 @@ MonoBehaviour:
   Wand: {fileID: 2862101829384457465}
   HandPotion: {fileID: 0}
   Beam: {fileID: 2194933477557966830}
+  Hair: {fileID: 0}
   Fox_Rot_Speed: 5
   Fox_SPrecovery_Speed: 15
   Damage: 0
@@ -70248,10 +70252,12 @@ MonoBehaviour:
   mat2: {fileID: 2100000, guid: 8cba2b4a880262e45884a764b09609a7, type: 2}
   NightMat: {fileID: 0}
   skybox: {fileID: 0}
+  Foxmove: 1
   FoxFocus: 1
   FoxExhausted: 1
   action: 0
   Combocount: 0
+  rigi: {fileID: 0}
   HPslider: {fileID: 8995705028357240333}
   SPslider: {fileID: 8995705026900506479}
   SPlight: {fileID: 8995705028226702941}
